@@ -120,7 +120,7 @@ header {
   outline-offset: 3px;
 }
 
-/* ----------- 5. Grid de cards ----------- */
+/* ---------------------- 5. Grid de cards ---------------------- */
 .course-list {
   list-style: none;
   display: grid;
@@ -220,11 +220,9 @@ header {
 @media (min-width: 768px) {
   header{
     height: 10vh;
-    padding: 20px 60px;
+    padding: 5px 60px;
   }
-  .header__logo{
-    height: 100%;
-  }
+ 
   .footer{
     font-size: 1rem;
   }

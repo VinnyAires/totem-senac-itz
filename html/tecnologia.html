@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologia da Informação</title>
+  <link rel="stylesheet" href="../css/estilo-padrao.css">
+  <script src="../scripts/pagCursos.js" defer></script>
+</head>
+<body id="body">
+
+  <header class="topo">
+        <div class="topo-text">
+          <h1>Tecnologia da Informação</h1>
+          <p>
+              Aprenda sobre desenvolvimento web, programação, segurança de dados e redes de computadores.
+              Os cursos preparam o aluno para um mercado em constante expansão e com alta demanda.
+          </p>
+        </div>
+
+        <div class="area-botao-voltar">
+          <a href="segmentos.html" class="botao-voltar"><img src="../img/VoltarWhite.png" alt=""></a>
+        </div>
+    </header>
+    <main class="container container-ti">
+    <section class="turno-section" data-turno="matutino">
+        <h2>Matutino – 08h às 12h</h2>
+        <div id="matutino" class="cursos"></div>
+    </section>
+
+    <section class="turno-section" data-turno="vespertino">
+        <h2>Vespertino – 14h às 18h</h2>
+        <div id="vespertino" class="cursos"></div>
+    </section>
+
+    <section class="turno-section" data-turno="noturno">
+        <h2>Noturno – 19h às 22h</h2>
+        <div id="noturno" class="cursos"></div>
+    </section>
+
+    <!-- modal único que será preenchido dinamicamente -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+        <button class="modal__close" aria-label="Fechar">&times;</button>
+        <h3 class="modal__title"></h3>
+        <p class="modal__desc"></p>
+        </div>
+    </div>
+    </main>
+
+    <!-- template para clonar cards -->
+    <template id="card-template">
+    <div class="card">
+        <h3 data-field="title"></h3>
+        <p data-field="hours"></p>
+        <p data-field="price"></p>
+        <div class="buttons">
+        <button class="inscrever">Inscreva-se</button>
+        <button class="sobre" data-action="open-modal">Sobre</button>
+        </div>
+    </div>
+    </template>
+
+</body>
+</html>

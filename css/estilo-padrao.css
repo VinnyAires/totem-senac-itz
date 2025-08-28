@@ -1,0 +1,33 @@
+/* container de cards */
+.cursos {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-content: center;
+}
+
+/* modal básico */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right:0; bottom:0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal--open {
+  display: flex;
+}
+.modal__content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 400px;
+}
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+}
