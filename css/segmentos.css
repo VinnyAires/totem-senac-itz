@@ -1,0 +1,277 @@
+/* 1. Variáveis e Fontes */
+:root {
+  --color-primary: #00368c;
+  --color-secondary: #f28705;
+  --color-bg: #ffffff;
+  --color-text: #333333;
+  --gap: 1.5rem;
+  --font-base: Arial, sans-serif;
+  --font-display: "Archivo Black", sans-serif;
+  --font-title: "Poppins", sans-serif;
+  --spacing: 1rem;
+}
+
+@font-face {
+  font-family: "Archivo Black";
+  src: url("../fontes/ArchivoBlack-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fontes/Poppins-Bold.ttf") format("truetype");
+}
+
+/* 2. Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background: url("../img/background.jpeg") center/cover no-repeat;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 3. Layout geral */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+header,
+footer {
+  padding: var(--gap);
+}
+.content {
+  flex: 1;
+  padding: var(--gap);
+}
+
+/* 4. Header */
+header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  margin-bottom: 2vh;
+  background-color: rgba(64, 61, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 15vh;
+  width: 100vw;
+}
+.header__logo{
+  height: 90%;
+}
+/* H1 responsivo e gradiente*
+.header__title {
+  font-family: var(--font-title);
+  /* Responsivo entre 2rem e 5rem *
+  font-size: clamp(2rem, 7vw, 5rem);
+
+  /* Texto em gradiente *
+  background: linear-gradient(90deg,
+    rgb(255, 71, 0)  0%,
+    var(--color-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  
+
+  /* Animação de fade-in + slide 
+  animation: titleFadeIn 0.8s ease-out both;
+}*/
+
+/* Underline centralizado */
+.header__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 40%;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+/* Keyframes */
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Botão principal aprimorado */
+.button--primary {
+  display: inline-block;
+  font-family: var(--font-base);
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  background-color: var(--color-secondary);
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: 
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+}
+
+/* Hover e foco visível */
+.button--primary:hover {
+  background-color: #e08217;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button--primary:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/*
+header h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-secondary);
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--gap);
+}
+.button {
+  display: inline-block;
+  font-family: var(--font-display);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button--primary {
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+}
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #e08217;
+  transform: translateY(-2px);
+}
+.button:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* 5. Grid de cards */
+.course-list {
+  list-style: none;
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.card {
+  background-color: var(--color-bg);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-top: 8px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover,
+.card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.card__image {
+  background-color: #f3f3f3;
+  padding: var(--gap);
+  border-bottom: 2px solid var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--gap);
+  font-family: var(--font-title);
+}
+.card__text h2 {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+/* 6. Footer */
+.footer {
+  background-color: rgba(2, 62, 115, 0.65);
+   
+  color: var(--color-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__professor {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+.footer__logo {
+  max-height: 60px;
+}
+.footer__students {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.footer__col {
+  list-style: none;
+}
+.footer__col li {
+  margin-bottom: 0.25rem;
+}
+
+/* 7. Breakpoints (mobile-first) */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .footer__professor{
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --gap: 2rem;
+  }
+  .page-container {
+    max-width: 1400px;
+  }
+   .footer__professor{
+    margin-bottom: 0;
+  }
+
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="../css/paginaCurso.css" />
+  <script src="../js/inatividade.js" defer></script>
+  <title>Senac – Cursos</title>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <h1>Cursos Oferecidos</h1>
+      <nav aria-label="Navegação de cursos">
+        <a href="pagTodosCursos.html" class="button button--primary">
+          Todos os cursos
+        </a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <!-- Seções estáticas por categoria -->
+      <section>
+        <h2>Tecnologia da Informação</h2>
+        <ul id="list-ti" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Comércio</h2>
+        <ul id="list-comercio" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Saúde</h2>
+        <ul id="list-saude" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Gastronomia</h2>
+        <ul id="list-gastronomia" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Moda</h2>
+        <ul id="list-moda" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Gestão</h2>
+        <ul id="list-gestao" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Comunicação</h2>
+        <ul id="list-comunicacao" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Beleza</h2>
+        <ul id="list-beleza" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Artes</h2>
+        <ul id="list-artes" class="course-list"></ul>
+      </section>
+
+      <section>
+        <h2>Educacional</h2>
+        <ul id="list-educacional" class="course-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <!-- seu rodapé aqui -->
+    </footer>
+  </div>
+
+  <!-- Template do card -->
+  <template id="card-template">
+    <li class="course-list__item">
+      <a class="card">
+        <div class="card__image">
+          <img loading="lazy" />
+        </div>
+        <div class="card__text">
+          <h2></h2>
+        </div>
+      </a>
+    </li>
+  </template>
+
+  <!-- JSON embutido (inline) -->
+  <script type="application/json" id="courses-data">
+  {
+    "ti": [
+      {
+        "slug": "pagTi.html",
+        "title": "Tecnologia da Informação",
+        "img": "../img/img.icons.atualizado/img-tecnologia.png",
+        "alt": "Ícone de Tecnologia da Informação"
+      }
+      /* … outros cursos de TI … */
+    ],
+    "comercio": [
+      {
+        "slug": "pagComercio.html",
+        "title": "Comércio",
+        "img": "../img/img.icons.atualizado/img-comércio.png",
+        "alt": "Ícone de Comércio"
+      }
+      /* … outros cursos de Comércio … */
+    ],
+    "saude": [
+      {
+        "slug": "pagSaude.html",
+        "title": "Saúde",
+        "img": "../img/img.icons.atualizado/img-saude.png",
+        "alt": "Ícone de Saúde"
+      }
+      /* … demais categorias seguem a mesma estrutura … */
+    ],
+    "gastronomia": [ /* … */ ],
+    "moda": [ /* … */ ],
+    "gestao": [ /* … */ ],
+    "comunicacao": [ /* … */ ],
+    "beleza": [ /* … */ ],
+    "artes": [ /* … */ ],
+    "educacional": [ /* … */ ]
+  }
+  </script>
+
+  <!-- Script de renderização -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const raw = document.getElementById('courses-data').textContent.trim();
+      let data;
+
+      try {
+        data = JSON.parse(raw);
+      } catch (err) {
+        console.error('JSON inválido:', err);
+        document.querySelector('.content').innerHTML = 
+          '<p class="error">Desculpe, ocorreu um erro ao carregar os cursos.</p>';
+        return;
+      }
+
+      const tpl = document.getElementById('card-template').content;
+      Object.entries(data).forEach(([category, courses]) => {
+        const listEl = document.getElementById(`list-${category}`);
+        if (!listEl) return;
+
+        courses.forEach(course => {
+          const clone = tpl.cloneNode(true);
+          const link = clone.querySelector('a');
+          const img  = clone.querySelector('img');
+          const h2   = clone.querySelector('h2');
+
+          link.href = course.slug;
+          link.classList.add(`card--${category}`);
+          img.src   = course.img;
+          img.alt   = course.alt;
+          h2.textContent = course.title;
+
+          listEl.appendChild(clone);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
