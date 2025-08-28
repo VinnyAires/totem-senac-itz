@@ -4,21 +4,21 @@
       "id": "intro-inf",
       "title": "Introdução à Informática – Windows e Office",
       "hours": 80,
-      "price": 429,
+      "price": 429.00,
       "description": "Promover conhecimentos básicos de informática na operação do Windows e do pacote Office."
     },
     {
       "id": "montagem",
       "title": "Montagem e Manutenção de Computadores / Notebooks",
       "hours": 120,
-      "price": 707,
+      "price": 707.00,
       "description": "Aprenda a montar, diagnosticar e reparar PCs e notebooks."
     },
     {
       "id": "robotica",
       "title": "Programação para Robótica",
       "hours": 60,
-      "price": 370,
+      "price": 370.00,
       "description": "Desenvolva protótipos e softwares embarcados para robótica."
     }
   ],
@@ -27,7 +27,7 @@
       "id": "intro-inf",
       "title": "Introdução à Informática – Windows e Office",
       "hours": 80,
-      "price": 429,
+      "price": 429.00,
       "description": "Promover conhecimentos básicos de informática na operação do Windows e do pacote Office."
     }
   ],
@@ -36,7 +36,7 @@
       "id": "intro-inf",
       "title": "Introdução à Informática – Windows e Office",
       "hours": 80,
-      "price": 429,
+      "price": 429.00,
       "description": "Promover conhecimentos básicos de informática na operação do Windows e do pacote Office."
     },
     {
