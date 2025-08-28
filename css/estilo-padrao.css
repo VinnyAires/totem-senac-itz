@@ -1,4 +1,284 @@
-/* container de cards */
+/*---------------------------------------------------
+  1. Variáveis e Reset
+---------------------------------------------------*/
+:root {
+  --color-bg-header: rgba(2, 62, 115, 0.9);
+  --color-bg-header-light: rgba(64, 61, 252, 0.4);
+  --color-accent: #f97316;
+  --color-primary: #2563eb;
+  --color-text: #f1f5f9;
+  --color-card-text: #1e293b;
+  --color-card-sub: #475569;
+  --header-height: 13vh;
+  --gap: 1.5rem;
+  --radius: 10px;
+  --font-base: 'Inter', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background: url(../img/background.jpeg) center/cover no-repeat;
+  min-height: 100vh;
+}
+
+/*---------------------------------------------------
+  2. Header (sticky)
+---------------------------------------------------*/
+header.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-bg-header);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--gap);
+}
+
+.topo-text {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.topo-text h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: #fff;
+}
+
+.topo-text p {
+  margin-top: 0.5rem;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.area-botao-voltar {
+  position: absolute;
+  left: var(--gap);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.botao-voltar img {
+  width: 2.5rem;
+  height: auto;
+  display: block;
+}
+
+/*---------------------------------------------------
+  3. Container principal
+---------------------------------------------------*/
+main.container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: calc(var(--header-height) + var(--gap)) var(--gap) var(--gap);
+}
+
+/*---------------------------------------------------
+  4. Seções de Turno
+---------------------------------------------------*/
+.turno-section {
+  margin-bottom: calc(var(--gap) * 2);
+}
+
+.turno-section h2 {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 600;
+  margin-bottom: var(--gap);
+  padding-left: 0.5rem;
+  border-left: 4px solid var(--color-accent);
+}
+
+/*---------------------------------------------------
+  5. Grid de Cards
+---------------------------------------------------*/
+.cursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--gap);
+  justify-items: center;
+}
+
+/*---------------------------------------------------
+  6. Card
+---------------------------------------------------*/
+.card {
+  background: #fff;
+  color: var(--color-card-text);
+  width: 100%;
+  max-width: 360px;
+  padding: 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--color-card-sub);
+  margin-bottom: 0.5rem;
+}
+
+/*---------------------------------------------------
+  7. Botões do Card
+---------------------------------------------------*/
+.buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.inscrever {
+  background: var(--color-accent);
+  color: #fff;
+}
+.inscrever:hover {
+  background: #ea580c;
+}
+
+.sobre {
+  background: var(--color-primary);
+  color: #fff;
+}
+.sobre:hover {
+  background: #1d4ed8;
+}
+
+/*---------------------------------------------------
+  8. Modal “Sobre”
+---------------------------------------------------*/
+.modal,
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal--open {
+  display: flex;
+}
+
+.overlay.active {
+  display: block;
+  background: rgba(0,0,0,0.05);
+  backdrop-filter: blur(5px);
+  z-index: 50;
+}
+
+.modal__content {
+  background: #2447a7;
+  color: #fff;
+  padding: var(--gap);
+  border-radius: var(--radius);
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.modal__close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+.modal__close:hover {
+  color: var(--color-accent);
+  transform: rotate(90deg);
+}
+
+.modal__title {
+  margin-top: 0;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5rem;
+}
+.modal__desc {
+  margin-top: var(--gap);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*---------------------------------------------------
+  9. Responsive Tweaks
+---------------------------------------------------*/
+@media (max-width: 768px) {
+  header.topo {
+    height: auto;
+    flex-direction: column;
+    padding: var(--gap);
+  }
+
+  .area-botao-voltar {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin-bottom: var(--gap);
+  }
+
+  .topo-text h1 {
+    font-size: 1.8rem;
+  }
+
+  main.container {
+    padding-top: calc(var(--header-height) * 1.5);
+  }
+}
+
+@media (min-width: 1081px) {
+  /* imagem de fundo maior */
+  body {
+    background-image: url(../img/RESOLUÇÃO-PC.png);
+  }
+}
+
+
+/* container de cards *
 .cursos {
   display: grid;
   gap: 1.5rem;
@@ -6,7 +286,7 @@
   justify-content: center;
 }
 
-/* modal básico */
+/* modal básico *
 .modal {
   position: fixed;
   top: 0; left: 0; right:0; bottom:0;
@@ -31,3 +311,4 @@
   float: right;
   cursor: pointer;
 }
+*/
