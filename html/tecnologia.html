@@ -8,92 +8,94 @@
   <script src="../scripts/pagCursos.js" defer></script>
 </head>
 <body id="body">
+    <div class="page-container">
+        <header class="topo">
+            <div class="topo-text">
+                <h1>Tecnologia da Informação</h1>
+                <p>
+                    Aprenda sobre desenvolvimento web, programação, segurança de dados e redes de computadores.
+                    Os cursos preparam o aluno para um mercado em constante expansão e com alta demanda.
+                </p>
+            </div>
 
-  <header class="topo">
-        <div class="topo-text">
-          <h1>Tecnologia da Informação</h1>
-          <p>
-              Aprenda sobre desenvolvimento web, programação, segurança de dados e redes de computadores.
-              Os cursos preparam o aluno para um mercado em constante expansão e com alta demanda.
-          </p>
+            <div class="area-botao-voltar">
+            <a href="segmentos.html" class="botao-voltar"><img src="../img/VoltarWhite.png" alt=""></a>
+            </div>
+        </header>
+        <div class="content-container">
+            <main class="container container-tecnologia">
+                <section class="turno-section" data-turno="matutino">
+                    <h2>Matutino – 08h às 12h</h2>
+                    <div id="matutino" class="cursos"></div>
+                </section>
+
+                <section class="turno-section" data-turno="vespertino">
+                    <h2>Vespertino – 14h às 18h</h2>
+                    <div id="vespertino" class="cursos"></div>
+                </section>
+
+                <section class="turno-section" data-turno="noturno">
+                    <h2>Noturno – 19h às 22h</h2>
+                    <div id="noturno" class="cursos"></div>
+                </section>
+
+                <!-- modal único que será preenchido dinamicamente -->
+                <div id="modal" class="modal">
+                    <div class="modal__content">
+                    <button class="modal__close" aria-label="Fechar">&times;</button>
+                    <h3 class="modal__title"></h3>
+                    <p class="modal__desc"></p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- logo após o </main>, antes de fechar o body -->
+            <template id="card-template">
+                <div class="card">
+                    <h3 data-field="title"></h3>
+                    <p data-field="hours"></p>
+                    <p data-field="price"></p>
+                    <div class="buttons">
+                    <button class="inscrever">Inscreva-se</button>
+                    <button class="sobre" data-action="open-modal">Sobre</button>
+                    </div>
+                </div>
+            </template>
         </div>
-
-        <div class="area-botao-voltar">
-          <a href="segmentos.html" class="botao-voltar"><img src="../img/VoltarWhite.png" alt=""></a>
+        <footer class="footer">
+        <div class="footer__professor">
+            <img
+            src="../img/logo-fecomercio.png"
+            alt="Logo Senac"
+            class="footer__logo"
+            />
+            <p><b>Professor: <br> Vinícius Aires</br></p>
         </div>
-    </header>
-    <main class="container container-ti">
-    <section class="turno-section" data-turno="matutino">
-        <h2>Matutino – 08h às 12h</h2>
-        <div id="matutino" class="cursos"></div>
-    </section>
-
-    <section class="turno-section" data-turno="vespertino">
-        <h2>Vespertino – 14h às 18h</h2>
-        <div id="vespertino" class="cursos"></div>
-    </section>
-
-    <section class="turno-section" data-turno="noturno">
-        <h2>Noturno – 19h às 22h</h2>
-        <div id="noturno" class="cursos"></div>
-    </section>
-
-    <!-- modal único que será preenchido dinamicamente -->
-    <div id="modal" class="modal">
-        <div class="modal__content">
-        <button class="modal__close" aria-label="Fechar">&times;</button>
-        <h3 class="modal__title"></h3>
-        <p class="modal__desc"></p>
-        </div>
+        
+            <div class="footer__alunos">
+                <p><b>Alunos da Turma 2024.8.20:</b></p>  
+                <div class="footer__students">
+                <ul class="footer__col">
+                    <li>Guilherme Silva</li>
+                    <li>Hernandes Santos</li>
+                    <li>João Victor Frazão</li>
+                    <li>Brenno Otaviano</li>
+                </ul>
+                <ul class="footer__col">
+                    <li>Hitallo Felix</li>
+                    <li>Jardel Resende</li>
+                    <li>Isaac Souza</li>
+                    <li>Laura Silva</li>
+                </ul>
+                <ul class="footer__col">
+                    <li>Paulo Otavio Neves</li>
+                    <li>Emanuella Souza</li>
+                    <li>Karolynne Andrade</li>
+                    <li>Miquéas Martins</li>
+                </ul>
+                </div>
+            </div>
+        </footer>
     </div>
-    </main>
-
-    <!-- logo após o </main>, antes de fechar o body -->
-    <template id="card-template">
-    <div class="card">
-        <h3 data-field="title"></h3>
-        <p data-field="hours"></p>
-        <p data-field="price"></p>
-        <div class="buttons">
-        <button class="inscrever">Inscreva-se</button>
-        <button class="sobre" data-action="open-modal">Sobre</button>
-        </div>
-    </div>
-    </template>
-
-    <footer class="footer">
-      <div class="footer__professor">
-        <img
-          src="../img/logo-fecomercio.png"
-          alt="Logo Senac"
-          class="footer__logo"
-        />
-        <p><b>Professor: <br> Vinícius Aires</br></p>
-      </div>
-      
-    <div class="footer__alunos">
-        <p><b>Alunos da Turma 2024.8.20:</b></p>  
-        <div class="footer__students">
-          <ul class="footer__col">
-            <li>Guilherme Silva</li>
-            <li>Hernandes Santos</li>
-            <li>João Victor Frazão</li>
-            <li>Brenno Otaviano</li>
-          </ul>
-          <ul class="footer__col">
-            <li>Hitallo Felix</li>
-            <li>Jardel Resende</li>
-            <li>Isaac Souza</li>
-            <li>Laura Silva</li>
-          </ul>
-          <ul class="footer__col">
-            <li>Paulo Otavio Neves</li>
-            <li>Emanuella Souza</li>
-            <li>Karolynne Andrade</li>
-            <li>Miquéas Martins</li>
-          </ul>
-        </div>
-    </div>
-    </footer>
 </body>
 </html>

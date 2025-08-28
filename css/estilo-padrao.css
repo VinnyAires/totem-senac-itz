@@ -26,47 +26,53 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   font-family: 'Inter', Arial, sans-serif;
   color: var(--color-text);
   background: url(../img/mobile.png) center/cover no-repeat;
-  min-height: 100vh;
+  /*min-height: 100vh;
+  display: flex;
+  flex-direction: column;*/
+}
+.page.container{
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  max-width: 1080px;
+  margin: 0 auto;
 }
-
 /*=============================================================================
   3. HEADER (sticky, tamanho fixo)
 =============================================================================*/
 header.topo {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: var(--header-height);
   background: var(--color-bg-header);
-  padding: var(--gap);
   text-align: center;
-  z-index: 100;
 }
 
 .topo-text h1 {
+  position: fixed;
+  background: var(--color-bg-header);
+  padding: var(--gap);
+  text-align: center;
+  z-index: 1;
   font-size: 1.6rem;
   color: #fff;
   line-height: 1.2;
+  width: 100vw;
+  margin-top: 0;
 }
 
 .topo-text p {
-  margin-top: 0.5rem;
+  
   font-size: 0.9rem;
   color: var(--color-subtext);
   line-height: 1.4;
+  padding: var(--gap);
+  padding-top: 4rem;
 }
 
 .area-botao-voltar {
@@ -85,9 +91,10 @@ header.topo {
   4. MAIN & CONTAINER (preenche abaixo do header)
 =============================================================================*/
 main.container {
-  padding-top: var(--header-height);
+  /*padding-top: var(--header-height);*/
   min-height: calc(100vh - var(--header-height));
   margin: 0 auto;
+  margin-top: 20px;
   width: 100%;
   max-width: 100%;
   padding-inline: var(--gap);
@@ -128,7 +135,7 @@ main.container {
   background: var(--color-card-bg);
   color: var(--color-card-text);
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   padding: var(--gap);
   border-radius: var(--radius);
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
@@ -265,7 +272,7 @@ button:hover {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: var(--gap);
   padding: var(--gap);
   font-size: 0.8rem;
@@ -274,8 +281,8 @@ button:hover {
 .footer__professor {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: var(--gap);
+  margin-bottom: 0;
 }
 
 .footer__logo {
@@ -283,7 +290,8 @@ button:hover {
 }
 
 .footer__alunos {
-  text-align: center;
+  text-align: left;
+  margin: 0;
 }
 
 .footer__alunos > p {
@@ -293,9 +301,8 @@ button:hover {
 
 .footer__students {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
-  width: 100%;
 }
 
 .footer__col {
@@ -314,6 +321,10 @@ button:hover {
 @media (min-width: 600px) {
   .cursos {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-items: left;
+  }
+  .card{
+    max-width: 330px;
   }
  .footer {
     flex-direction: row;
@@ -344,6 +355,7 @@ button:hover {
   main.container {
     max-width: 1100px;
     margin: 0 auto;
+    margin-top: 20px;
     padding-inline: calc(var(--gap) * 2);
   }
   header.topo {

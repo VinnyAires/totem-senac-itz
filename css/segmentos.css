@@ -121,7 +121,7 @@ header {
 }
 
 /* ---------------------- 5. Grid de cards ---------------------- */
-.course-list {
+.curso-lista {
   list-style: none;
   display: grid;
   gap: var(--gap);
@@ -200,7 +200,7 @@ header {
 
 /* 7. Breakpoints (mobile-first) */
 @media (min-width: 680px) {
-  .course-list{
+  .curso-lista{
     justify-content: center;
   }
   .card{
