@@ -58,7 +58,7 @@ footer {
   padding: var(--gap);
 }
 
-/* 4. Header */
+/* ----------- 4. Header ----------- */
 header {
   text-align: center;
   display: flex;
@@ -107,7 +107,7 @@ header {
   transform: translateX(-50%);
 }
 
-/* Keyframes */
+/* ----------- Keyframes ----------- */
 @keyframes titleFadeIn {
   from {
     opacity: 0;
@@ -118,7 +118,7 @@ header {
     transform: translateY(0);
   }
 }
-/* Botão principal aprimorado */
+/* ----------- Botão principal ----------- */
 .button--primary {
   display: inline-block;
   font-family: var(--font-base);
@@ -179,7 +179,7 @@ header h1 {
   outline-offset: 3px;
 }
 
-/* 5. Grid de cards */
+/* ----------- 5. Grid de cards ----------- */
 .course-list {
   list-style: none;
   display: grid;
@@ -193,7 +193,7 @@ header h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   border-top: 8px solid var(--color-primary);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card:hover,
@@ -204,7 +204,7 @@ header h1 {
 .card__image {
   background-color: #f3f3f3;
   padding: var(--gap);
-  border-bottom: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,13 +256,21 @@ header h1 {
 }
 
 /* 7. Breakpoints (mobile-first) */
+@media (min-width: 680px) {
+  .card{
+    flex-direction: column;
+  }
+  .card__image{
+    border: 0;
+    border-bottom: 2px solid var(--color-primary);
+  }
+}
 @media (min-width: 768px) {
   /*header h1 {
     font-size: 2.5rem;
   }*/
   .footer__professor{
-    flex-direction: column;
-    
+    flex-direction: column;  
     align-items: center;
   }
 }
