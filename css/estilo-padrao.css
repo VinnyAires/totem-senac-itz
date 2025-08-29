@@ -76,10 +76,10 @@ header.topo {
 }
 
 .area-botao-voltar {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 18px;
   left: var(--gap);
-  transform: translateY(-50%);
+  z-index: 2;
 }
 
 .botao-voltar img {
@@ -202,7 +202,21 @@ button:hover {
   background: #1d4ed8;
 }
 
-/*=============================================================================
+/*========================
+Botão Subir
+========================*/
+.area-botao-subir {
+  position: fixed;
+  top: 18px;
+  right: var(--gap);
+  z-index: 2;
+}
+
+.botao-voltar img {
+  width: 2rem;
+  height: auto;
+}
+/*============================================================================
   9. MODAL SOBRE
 =============================================================================*/
 .modal,
