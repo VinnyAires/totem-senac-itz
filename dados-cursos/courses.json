@@ -1,0 +1,49 @@
+{
+  "turnoLabels": {
+    "matutino": "08h às 12h",
+    "vespertino": "14h às 18h",
+    "noturno": "19h às 22h"
+  },
+  "courses": [
+    {
+      "segmento": "tecnologia",
+      "turno": "matutino",
+      "titulo": "Introdução à Informática – Windows e Office",
+      "ch": 80,
+      "preco": 429,
+      "descricao": "Promover conhecimentos básicos de informática no Windows e Office."
+    },
+    {
+      "segmento": "tecnologia",
+      "turno": "vespertino",
+      "titulo": "Programação para Robótica",
+      "ch": 60,
+      "preco": 370,
+      "descricao": "Desenvolva protótipos e softwares embarcados para robótica."
+    },
+    {
+      "segmento": "gestao",
+      "turno": "matutino",
+      "titulo": "Administração Essencial",
+      "ch": 100,
+      "preco": 550,
+      "descricao": "Fundamentos de gestão, planejamento e controle organizacional."
+    },
+    {
+      "segmento": "moda",
+      "turno": "noturno",
+      "titulo": "Design de Moda Sustentável",
+      "ch": 120,
+      "preco": 720,
+      "descricao": "Técnicas e práticas para criar moda com baixo impacto ambiental."
+    },
+    {
+      "segmento": "saude",
+      "turno": "vespertino",
+      "titulo": "Auxiliar de Enfermagem",
+      "ch": 200,
+      "preco": 780,
+      "descricao": "Competências práticas de apoio aos profissionais de enfermagem."
+    }
+  ]
+}

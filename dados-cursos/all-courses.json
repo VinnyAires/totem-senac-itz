@@ -1,0 +1,26 @@
+{
+  "turnoLabels": {
+    "matutino": "08h às 12h",
+    "vespertino": "14h às 18h",
+    "noturno": "19h às 22h"
+  },
+  "courses": [
+    {
+      "segmento": "ti",
+      "turno": "matutino",
+      "titulo": "Introdução à Informática – Windows e Office",
+      "ch": 80,
+      "preco": 429,
+      "descricao": "Promover conhecimentos básicos de informática no Windows e Office."
+    },
+    {
+      "segmento": "gastronomia",
+      "turno": "vespertino",
+      "titulo": "Cozinha Brasileira",
+      "ch": 120,
+      "preco": 630,
+      "descricao": "Técnicas da culinária nacional para valorização dos ingredientes regionais."
+    }
+
+  ]
+}
