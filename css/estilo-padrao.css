@@ -2,7 +2,7 @@
   1. VARIÁVEIS GLOBAIS
 =============================================================================*/
 :root {
-  --color-bg-header: rgba(2, 62, 115, 0.9);
+  --color-bg-header: #023e74e6;
   --color-text: #f1f5f9;
   --color-subtext: #cbd5e1;
   --color-accent: #f97316;
@@ -31,9 +31,7 @@ body {
   color: var(--color-text);
   background: url(../img/mobile.png) center/cover no-repeat;
   overflow-x: hidden; /* Previne scroll horizontal */
-  /*min-height: 100vh;
-  display: flex;
-  flex-direction: column;*/
+  
 }
 .page.container{
   display: flex;
@@ -55,6 +53,9 @@ header{
 }
 .topo-text{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .topo-text h1 {
   width: 100%;
@@ -67,7 +68,6 @@ header{
   color: #fff;
   line-height: 1.2;
   margin-top: 0;
-  text-align: center;
 }
 .topo-text p {
   font-size: 0.9rem;
@@ -203,13 +203,13 @@ button:hover {
   background: #1d4ed8;
 }
 
-/*========================
-Botão Subir
-========================*/
+/*=====================================================================
+    Botão Subir
+=====================================================================*/
 .area-botao-subir {
-  position: fixed;
+  text-align: right;
   top: 18px;
-  right: var(--gap);
+  margin-bottom: var(--gap);
   z-index: 2;
 }
 
@@ -338,6 +338,9 @@ footer{
 =============================================================================*/
 /* Tablets e pequenos desktops */
 @media (min-width: 600px) {
+  body {
+    background: url(../img/background-tablet.png) center/cover no-repeat;
+  }
   .cursos {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     justify-items: left;
@@ -357,9 +360,20 @@ footer{
     text-align: center;
   }
   .topo-text p{
-    text-align: center;
+   
     max-width: 1100px;
   }
+  .area-botao-voltar {
+    left: 20%;
+  }
+  
+  /* ----- Usar na página de todos os cursos
+  .area-botao-subir{
+    position: fixed;
+    top: 95%;
+    right: 15%;
+  }*/
+
   footer{
     display: flex;
     justify-content: center;
@@ -391,22 +405,24 @@ footer{
   body {
     background: url(../img/background.jpeg) center/cover no-repeat;
   }
-  .page.container{
-    /* Removido max-height incorreto */
+
+  .topo-text h1{
+    margin-top: 0;
   }
+  
   main.container {
     max-width: 1100px;
-    /* Removida altura fixa para evitar overflow */
-    /* height: 1000px; */
     margin: 0 auto;
     margin-top: 20px;
     padding-inline: calc(var(--gap) * 2);
   }
- 
-  .topo-text h1{
-    margin-top: 0;
-  }
+
   .footer-container{
     padding-top: 20px;
+  }
+}
+@media (min-width: 1080px) {
+   body {
+    background: url(../img/background-desktop.png) center/cover no-repeat;
   }
 }
