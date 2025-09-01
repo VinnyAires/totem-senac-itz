@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todos os Cursos</title>
+
+  <!-- sua folha de estilos padrão -->
+  <link rel="stylesheet" href="../css/estilo-padrao.css"/>
+
+  <!-- script que popula tudo -->
+  <script src="../scripts/todos-cursos.js" defer></script>
+</head>
+<body id="body">
+
+  <div class="page-container">
+    <!-- HEADER -->
+    <header>
+      <div class="topo">
+        <div class="topo-text">
+          <div class="area-botao-voltar">
+            <a href="segmentos.html" class="botao-voltar">
+              <img src="../img/icons/icon-voltar.png" alt="Voltar"/>
+            </a>
+          </div>
+          <h1>Todos os Cursos</h1>
+          <p>Confira abaixo todos os cursos disponíveis, organizados por turno e segmento.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN: vazio, será preenchido pelo JS -->
+    <main class="container" id="main-content"></main>
+
+    <!-- “Subir” no topo -->
+    <div class="area-botao-subir">
+      <a href="#body" class="botao-voltar">
+        <img src="../img/icons/icon-subir.png" alt="Subir"/>
+      </a>
+    </div>
+
+    <!-- MODAL único -->
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Fechar">&times;</button>
+        <h3 class="modal__title"></h3>
+        <p class="modal__desc"></p>
+      </div>
+    </div>
+
+    <!-- TEMPLATE de card -->
+    <template id="card-template">
+      <div class="card">
+        <h3 data-field="title"></h3>
+        <p data-field="hours"></p>
+        <p data-field="price"></p>
+        <div class="buttons">
+          <button class="inscrever">Inscreva-se</button>
+          <button class="sobre" data-action="open-modal">Sobre</button>
+        </div>
+      </div>
+    </template>
+
+    <!-- FOOTER (mesma estrutura que as outras páginas) -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer__professor">
+          <img src="../img/logo-fecomercio.png" alt="Logo Senac" class="footer__logo"/>
+          <p><b>Professor:<br>Vinícius Aires</b></p>
+        </div>
+        <div class="footer__alunos">
+          <p><b>Alunos da Turma 2024.8.20:</b></p>
+          <div class="footer__students">
+            <ul class="footer__col">
+              <li>Guilherme Silva</li>
+              <li>Hernandes Santos</li>
+              <li>João Victor Frazão</li>
+              <li>Brenno Otaviano</li>
+            </ul>
+            <ul class="footer__col">
+              <li>Hitallo Felix</li>
+              <li>Jardel Resende</li>
+              <li>Isaac Souza</li>
+              <li>Laura Silva</li>
+            </ul>
+            <ul class="footer__col">
+              <li>Paulo Otavio Neves</li>
+              <li>Emanuella Souza</li>
+              <li>Karolynne Andrade</li>
+              <li>Miquéas Martins</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /page-container -->
+
+</body>
+</html>

@@ -26,7 +26,7 @@
       "turno": "matutino",
       "titulo": "Administração Essencial",
       "ch": 100,
-      "preco": 550,
+      "preco": 550.10,
       "descricao": "Fundamentos de gestão, planejamento e controle organizacional."
     },
     {
@@ -42,7 +42,7 @@
       "turno": "vespertino",
       "titulo": "Auxiliar de Enfermagem",
       "ch": 200,
-      "preco": 780,
+      "preco": 780.10,
       "descricao": "Competências práticas de apoio aos profissionais de enfermagem."
     }
   ]

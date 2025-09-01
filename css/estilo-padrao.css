@@ -64,7 +64,7 @@ header{
   background: var(--color-bg-header);
   padding: var(--gap);
   z-index: 1;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #fff;
   line-height: 1.2;
   margin-top: 0;
@@ -118,6 +118,20 @@ main.container {
   border-left: 4px solid var(--color-accent);
 }
 
+/* PAGINA DE TODOS OS CURSOS -segmento dentro do turno */
+.segmento-section {
+  margin-bottom: 2rem;
+}
+
+.segmento-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--color-primary);
+  text-transform: capitalize;
+}
+
 /*=============================================================================
   6. GRID DE CARDS (linhas iguais e colunas adaptáveis)
 =============================================================================*/
@@ -136,7 +150,7 @@ main.container {
   background: var(--color-card-bg);
   color: var(--color-card-text);
   width: 100%;
-  max-width: 400px;
+  /*max-width: 400px;*/
   padding: var(--gap);
   border-radius: var(--radius);
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
@@ -332,6 +346,9 @@ footer{
 .footer__col li {
   margin-bottom: 0.25rem;
 }
+
+
+
 
 /*=============================================================================
   11. MEDIA QUERIES (crescente)
