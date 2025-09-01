@@ -26,6 +26,25 @@
   box-sizing: border-box;
 }
 
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 0px;
+}
+/*        COR DO SCROLLBAR
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-bg-header);        /* color of the tracking area 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-card-text);    /* color of the scroll thumb 
+  border-radius: 20px;       /* roundness of the scroll thumb *
+  border: 3px solid #1e293b;  /* creates padding around scroll thumb *
+}*/
+
 body {
   font-family: 'Inter', Arial, sans-serif;
   color: var(--color-text);

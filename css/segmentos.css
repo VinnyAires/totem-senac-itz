@@ -207,8 +207,15 @@ background-color: rgba(64, 61, 252, 0.4);
   margin-bottom: 0.25rem;
 }
 
-/* 7. Breakpoints (mobile-first) */
+/*=============================================== 
+7. Responsividade (mobile-first) 
+=================================================*/
 @media (min-width: 680px) {
+  body{
+    background: url("../img/background.jpeg") center/cover no-repeat;
+    background-attachment: fixed;
+    line-height: 1.5;
+  }
   .curso-lista{
     justify-content: center;
   }
@@ -284,10 +291,10 @@ background-color: rgba(64, 61, 252, 0.4);
   9. MEDIA QUERY: TOTEM RETRATO E DESKTOP MÉDIO (>=1080px)
 =============================================================================*/
 @media (min-width: 1080px) {
-  body {
+/*  body {
     background: url(../img/background-totem.png) center/cover no-repeat;
   }
-
+*/
   /*manter o footer na base da tela*/
   .page-container{
     display: flex;
