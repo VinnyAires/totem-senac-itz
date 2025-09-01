@@ -369,6 +369,7 @@ footer{
   .content-container{
     display: flex;
     justify-content: end;
+    margin: 10px;
   }
   
   /* ----- Usar na página de todos os cursos
@@ -404,11 +405,7 @@ footer{
   }
 }
 
-@media (min-width: 840px) {
-    .card{
-    max-width: 260px;
-  }
-}
+
 
 /* Grandes telas (totem em retrato 1080×1920) */
 @media (min-width: 1080px) {
