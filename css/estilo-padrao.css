@@ -346,7 +346,7 @@ footer{
     justify-items: left;
   }
   .card{
-    max-width: 385px;
+    max-width: 380px;
   }
   header{
     display: flex;
