@@ -221,6 +221,12 @@ background-color: rgba(64, 61, 252, 0.4);
   .card__text h2{
     font-size: 1.25rem;
   }
+  .footer__professor img{
+    margin-bottom: 10px;
+  }
+  .footer__students{
+    justify-content: space-between;
+  }
 }
 @media (min-width: 768px) {
   .header-content{
