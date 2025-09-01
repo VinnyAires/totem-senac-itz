@@ -4,7 +4,7 @@
     "vespertino": "14h às 18h",
     "noturno": "19h às 22h"
   },
-  "courses": [
+  "cursos": [
     {
       "segmento": "tecnologia",
       "turno": "matutino",
@@ -19,7 +19,7 @@
       "titulo": "Programação para Robótica",
       "ch": 60,
       "preco": 370,
-      "descricao": "Desenvolva protótipos e softwares embarcados para robótica."
+      "descricao": "Desenvolva protótipos e softwares embarcados para aplicações robóticas."
     },
     {
       "segmento": "gestao",
@@ -35,7 +35,7 @@
       "titulo": "Design de Moda Sustentável",
       "ch": 120,
       "preco": 720,
-      "descricao": "Técnicas e práticas para criar moda com baixo impacto ambiental."
+      "descricao": "Técnicas para criar moda com baixo impacto ambiental."
     },
     {
       "segmento": "saude",
