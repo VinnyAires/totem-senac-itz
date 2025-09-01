@@ -31,7 +31,7 @@ body {
   color: var(--color-text);
   background: url(../img/mobile.png) center/cover no-repeat;
   overflow-x: hidden; /* Previne scroll horizontal */
-  
+  background-attachment: fixed;
 }
 .page.container{
   display: flex;
@@ -358,7 +358,7 @@ footer{
 /* Tablets e pequenos desktops */
 @media (min-width: 600px) {
   body {
-    background: url(../img/background-tablet.png) center/cover no-repeat;
+    background: url(../img/background-totem.png) center/cover no-repeat;
   }
   .cursos {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -380,6 +380,7 @@ footer{
   }
   .topo-text h1{
     font-size: 1.6rem;
+    margin-left: 0;
   }
   .topo-text p{
     max-width: 1100px;

@@ -33,6 +33,7 @@ body {
   font-family: var(--font-base);
   color: var(--color-text);
   background: url("../img/background.jpeg") center/cover no-repeat;
+  background-attachment: fixed;
   line-height: 1.5;
 }
 a {
