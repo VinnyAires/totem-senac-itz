@@ -1,22 +1,17 @@
-
 /*=============================================================================
-  1. VARIÁVEIS GLOBAIS
+  VARIÁVEIS, RESET E BASE
 =============================================================================*/
 :root {
-  --color-bg-header: #023e74e6;
-  --color-text: #f1f5f9;
-  --color-subtext: #cbd5e1;
-  --color-accent: #f97316;
-  --color-primary: #2563eb;
-  --color-bg-body: #000;  
-  --radius: 8px;
-  --gap: 1rem;
-  --header-height: 13vh;
+  --color-bg-header:    #023e74e6;
+  --color-text:         #f1f5f9;
+  --color-accent:       #f97316;
+  --color-body-bg:      #000;
+  --gap:                1rem;
+  --header-height:      15vh;
+  --footer-height:      15vh;
+  --font-base:          'Inter', Arial, sans-serif;
 }
 
-/*=============================================================================
-  2. RESET E VIEWPORT
-=============================================================================*/
 *,
 *::before,
 *::after {
@@ -25,94 +20,108 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Inter', Arial, sans-serif;
-  color: var(--color-text);
-  background: url("../img/mobile.png") center/cover no-repeat;
-  background-color: var(--color-bg-body);
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  font-family: var(--font-base);
+  background: var(--color-body-bg) center/cover no-repeat;
+  color: var(--color-text);
+  overflow: hidden;
 }
 
 /*=============================================================================
-  3. HEADER (fixo no topo)
+  WRAPPER PRINCIPAL
 =============================================================================*/
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;           /* 1920px num totem 1080×1920 */
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+/*=============================================================================
+  HEADER
+=============================================================================*/
+.header {
   height: var(--header-height);
   background: var(--color-bg-header);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--gap);
-  z-index: 100;
 }
 
-header img {
-  max-height: calc(var(--header-height) * 0.6);
+.header__logo {
+  max-height: 80%;
   width: auto;
 }
 
 /*=============================================================================
-  4. MAIN (conteúdo abaixo do header)
+  MAIN
 =============================================================================*/
-main.container {
-  margin-top: var(--header-height);
+.main-content {
   flex: 1;
+  overflow-y: auto;
+  padding: var(--gap);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--gap);
   gap: var(--gap);
 }
 
-/* Seção de texto */
-main .text h1 {
-  font-size: 2rem;
-  text-align: center;
-  line-height: 1.2;
-  color: var(--color-text);
+/* Imagem de desconto 
+#discount-image {
+  width: 80%;
+  max-width: 320px;
 }
-
-/* Banner de desconto */
-#imgDesconto {
-  position: relative;
+#discount-image img {
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
+  display: block;
+}
+*/
+
+/* 2) Posiciona o banner de desconto no topo-direito */
+#discount-image {
+  position: absolute;
+  top: -1rem;    /* afasta 1rem do topo */
+  right: -1rem;  /* afasta 1rem da borda direita */
+  z-index: 20;  /* acima de header/main */
+  width: 40%; /* tamanho base, ajuste conforme necessidade */
+  /* faz o giro */
+  transform: rotate(35deg);
+  transform-origin: center center;
 }
 
-#imgDesconto img {
-  display: block;
+/* Garante que a imagem interna escale corretamente */
+#discount-image img {
   width: 100%;
   height: auto;
-  transform: rotate(15deg);
-  position: relative;
-  z-index: 1;
+  display: block;
 }
 
-/*=============================================================================
-  5. CARROSSEL (responsivo e fluido)
-=============================================================================*/
+/* Mensagem de boas-vindas */
+.welcome h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Carrossel responsivo 
 .carrossel {
   position: relative;
   width: 100%;
   max-width: 900px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   overflow: hidden;
-  margin: var(--gap) auto;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .slides {
@@ -122,128 +131,136 @@ main .text h1 {
   will-change: transform;
 }
 
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+
+/* wrapper visível, com overflow hidden */
+/* container visível, overflow hidden */
+.carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;       /* ou 100% do pai */
+  aspect-ratio: 16/9;     /* mantém proporção */
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+/* flex-container sem width fixa */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* cada slide ocupa 100% do wrapper */
 .imagensSel {
   flex: 0 0 100%;
   height: 100%;
 }
 
-.imagensSel picture,
 .imagensSel img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
 }
 
-/*=============================================================================
-  6. BOTÃO “VER CURSOS”
-=============================================================================*/
-section.botao {
+
+/* Botão Ver Cursos */
+.action {
   margin-top: var(--gap);
 }
 
-section.botao a {
-  display: inline-block;
+.button--primary {
   background: var(--color-accent);
   color: #fff;
-  text-decoration: none;
   padding: 0.75rem 1.5rem;
-  border-radius: var(--radius);
-  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
   font-weight: 600;
   transition: background 0.2s, transform 0.2s;
 }
 
-section.botao a:hover {
+.button--primary:hover {
   background: #ea580c;
   transform: translateY(-2px);
 }
 
 /*=============================================================================
-  7. FOOTER (sempre ao final)
+  FOOTER
 =============================================================================*/
-footer.footer {
-  background-color: rgba(2, 62, 115, 0.65);
-  color: var(--color-text);
-  padding: var(--gap);
+.footer {
+  height: var(--footer-height);
+  background: rgba(2,62,115,0.65);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gap);
+  justify-content: center;
+  padding: var(--gap);
 }
 
-.logo-professor {
-  display: flex;
-  align-items: center;
-  gap: var(--gap);
-}
-
-.logo-professor img {
-  max-height: 3rem;
-  width: auto;
-}
-
-.footer-creditos p {
-  color: var(--color-accent);
-  font-size: 0.9rem;
-}
-
-.colunas {
-  width: 100%;
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--gap);
+.footer__professor {
+  margin-bottom: var(--gap);
   text-align: center;
 }
 
-.colunas p {
+.footer__logo {
+  max-height: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
+.footer__students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.footer__col {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__col li {
+  margin-bottom: 0.25rem;
+}
+
 /*=============================================================================
-  8. MEDIA QUERIES
+  MEDIA QUERIES
 =============================================================================*/
-/* Tablets e pequenos desktops */
+/* Pequenos desktops e tablets */
 @media (min-width: 600px) {
-  body {
-    background: url("../img/background-tablet.png") center/cover no-repeat;
+  .welcome h1 {
+    font-size: 2.5rem;
   }
 
-  main.container {
-    padding: calc(var(--gap) * 2);
+  .button--primary {
+    font-size: 1rem;
   }
 
-  .colunas {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: left;
+  .footer__students {
+    justify-content: space-between;
   }
 }
 
-/* Totem retrato / desktops médios (>=1080px) */
+/* Totem retrato e desktops médios (>=1080px) */
 @media (min-width: 1080px) {
-  body {
-    background: url("../img/background-totem.png") center/cover no-repeat;
-  }
-
-  main.container {
-    padding: calc(var(--gap) * 2) calc(var(--gap) * 3);
-  }
-
-  .carrossel {
-    max-width: 1000px;
-  }
-
-  .colunas {
-    grid-template-columns: repeat(3, 1fr);
-    text-align: left;
+  .main-content {
+    padding-inline: 2rem;
   }
 }
 
-/* Desktops muito largos */
+/* Ultra-wide desktops */
 @media (min-width: 1400px) {
-  body {
-    background: url("../img/background-desktop.png") center/cover no-repeat;
+  .page-container {
+    max-width: 1400px;
   }
 }

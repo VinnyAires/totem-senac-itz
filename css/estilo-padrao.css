@@ -124,6 +124,7 @@ main.container {
   display: flex;
   flex-direction: column;
 }
+.segmento-divider { grid-column: 1 / -1; }
 
 /*=============================================================================
   5. SEÇÕES DE TURNO
@@ -151,7 +152,7 @@ main.container {
   margin-bottom: 1rem;
   padding-left: 0.5rem;
   border-left: 3px solid var(--color-primary);
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 /*=============================================================================

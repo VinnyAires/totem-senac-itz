@@ -341,5 +341,8 @@ header a{
   footer{
     margin-top: auto;
   }
+  .footer-content{
+    font-size: 1rem;
+  }
 
 }

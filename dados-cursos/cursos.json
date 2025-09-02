@@ -96,7 +96,7 @@
 {
      "segmento": "beleza",
      "turno": "noturno",
-     "titulo": "Design e coloração de sombrancelhas",
+     "titulo": "Design e coloração de sobrancelhas",
      "ch": 40,
      "preco": 277,
      "descricao": "Capacita o aluno em técnicas de design e coloração para sobrancelhas."
@@ -307,6 +307,54 @@
      "ch": 40,
      "preco": 579,
      "descricao": "Este curso tem como objetivo promover a construção de conhecimentos relativos ao preparo de salgados."
+   },
+   {
+     "segmento": "educacao",
+     "turno": "matutino",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
+   },
+   {
+     "segmento": "educacao",
+     "turno": "vespertino",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
+   },
+   {
+     "segmento": "educacao",
+     "turno": "noturno",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
+   },
+   {
+     "segmento": "artes",
+     "turno": "matutino",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
+   },
+   {
+     "segmento": "artes",
+     "turno": "vespertino",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
+   },
+   {
+     "segmento": "artes",
+     "turno": "noturno",
+     "titulo": "Curso Teste de Card",
+     "ch": 40,
+     "preco": 100,
+     "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização."
    }
 
 

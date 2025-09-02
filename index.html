@@ -1,6 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Senac – Bem-vindo</title>
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/index.css" />
+
+  <!-- Script do carrossel -->
+  <script src="scripts/carrossel.js" defer></script>
+</head>
+<body>
+  <div class="page-container">
+
+    <!-- HEADER: logo centralizada -->
+    <header class="header">
+      <img src="img/logo-branca.png" alt="Logo SENAC" class="header__logo" />
+    </header>
+
+    <!-- MAIN: imagem de desconto, boas-vindas, carrossel e botão -->
+    <main class="main-content">
+      <div id="discount-image">
+        <img src="img/desconto.png" alt="30% de desconto" />
+      </div>
+
+      <section class="welcome">
+        <h1>BEM-VINDO</h1>
+      </section>
+
+      <div class="carrossel">
+        <div class="slides" id="imgs">
+          <div class="imagensSel">
+            <picture>
+                <source media="(max-width:480px)" srcset="img/carrossel/01_mobile.png">
+                <source media="(max-width:768px)" srcset="img/carrossel/01_tablet.png">
+                <img src="img/carrossel/01.png"
+                   alt="Senac EAD">
+            </picture>
+          </div>
+          <div class="imagensSel">
+            <picture>
+              <source media="(max-width:480px)" srcset="img/carrossel/02_mobile.png">
+              <source media="(max-width:768px)" srcset="img/carrossel/02_tablet.png">
+              <img src="img/carrossel/02.png"
+                   alt="Senac EAD">
+            </picture>
+          </div>
+          <div class="imagensSel">
+            <picture>
+              <source media="(max-width:480px)" srcset="img/carrossel/03_mobile.png">
+              <source media="(max-width:768px)" srcset="img/carrossel/03_tablet.png">
+              <img src="img/carrossel/03.png"
+                   alt="Evolua sua carreira">
+            </picture>
+          </div>
+          <div class="imagensSel">
+            <picture>
+              <source media="(max-width:480px)" srcset="img/carrossel/04_mobile.png">
+              <source media="(max-width:768px)" srcset="img/carrossel/04_tablet.png">
+              <img src="img/carrossel/04.png"
+                   alt="Cursos 100% online">
+            </picture>
+          </div>
+          <div class="imagensSel">
+            <picture>
+              <source media="(max-width:480px)" srcset="img/carrossel/05_mobile.png">
+              <source media="(max-width:768px)" srcset="img/carrossel/05_tablet.png">
+              <img src="img/carrossel/05.png"
+                   alt="Não é filtro. É futuro!">
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <section class="action">
+        <a href="html/segmentos.html" class="button--primary">
+          VER CURSOS
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER: logo, professor e alunos -->
+    <footer class="footer">
+      <div class="footer__professor">
+        <img src="img/logo-fecomercio.png" alt="Logo Senac" class="footer__logo" />
+        <p><strong>Professor: Vinícius Aires</strong></p>
+      </div>
+      <div class="footer__students">
+        <ul class="footer__col">
+          <li>Guilherme Silva</li>
+          <li>Hernandes Santos</li>
+          <li>João Victor Frazão</li>
+          <li>Brenno Otaviano</li>
+        </ul>
+        <ul class="footer__col">
+          <li>Hitallo Felix</li>
+          <li>Jardel Resende</li>
+          <li>Isaac Sousa</li>
+          <li>Paulo Otávio Neves</li>
+        </ul>
+        <ul class="footer__col">
+          <li>Laura da Silva</li>
+          <li>Emanuella Souza</li>
+          <li>Karolynne Andrade</li>
+          <li>Miquéas Martins</li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +127,7 @@
 </head>
 <body>
     <header>
-        <img src="img/logoSenac.png" alt="LOGO SENAC À DIREITA">
+        <img src="img/logo-branca.png" alt="Logo SENAC">
     </header>
     <main class="container">
         <section class="text">
@@ -24,43 +139,7 @@
         
 
         <div class="carrosel">
-            <div class="slides" id="imgs">
-                <div class="imagensSel">
-                    <picture>
-                        <source media="(max-width:480px)" srcset="img/carrosel/01_mobile.png">
-                        <source media="(max-width:768px)" srcset="img/carrosel/01_tablet.png">
-                        <img src="img/carrosel/01_mobile.png" alt="Educação para todos" style="width:auto;">
-                    </picture> 
-                </div>
-                <div class="imagensSel">
-                    <picture>
-                        <source media="(max-width:480px)" srcset="img/carrosel/02_mobile.png">
-                        <source media="(max-width:768px)" srcset="img/carrosel/02_tablet.png">
-                        <img src="img/carrosel/02_mobile.png" alt="Quer saber? Senac EAD" style="width:auto;">
-                    </picture> 
-                </div>
-                <div class="imagensSel">
-                    <picture>
-                        <source media="(max-width:480px)" srcset="img/carrosel/03_mobile.png">
-                        <source media="(max-width:768px)" srcset="img/carrosel/03_tablet.png">
-                        <img src="img/carrosel/03_mobile.png" alt="Evolua sua carreira" style="width:auto;">
-                    </picture> 
-                </div>
-                <div class="imagensSel">
-                    <picture>
-                        <source media="(max-width:480px)" srcset="img/carrosel/04_mobile.png">
-                        <source media="(max-width:768px)" srcset="img/carrosel/04_tablet.png">
-                        <img src="img/carrosel/04_mobile.png" alt="Cursos 100% online" style="width:auto;">
-                    </picture> 
-                </div>
-                <div class="imagensSel">
-                    <picture>
-                        <source media="(max-width:480px)" srcset="img/carrosel/05_mobile.png">
-                        <source media="(max-width:768px)" srcset="img/carrosel/05.png">
-                        <img src="img/carrosel/05_mobile.png" alt="Não é filtro. É futuro!" style="width:auto;">
-                    </picture> 
-                </div>
-            </div>
+           Aqui vai ficar um carrossel de imagens automático.
         </div>
         <section class="botao">
             <a href="html/segmentos.html">VER CURSOS</a>
@@ -71,7 +150,7 @@
     <footer class="footer">
             <div class="logo-professor">
                 <div class="logoSenac">
-                    <img src="img/marca_branca-qioshtdj656d7xvmr6klexd6gy7kwf65t9ytcmxfwi.png" alt="LOGO SENAC">
+                    <img src="img/logo-branca.png" alt="LOGO SENAC">
                 </div>
                 <div class="footer-creditos">
                     <p>Professor: Vinicius Aires</p>
@@ -101,4 +180,4 @@
             </div>
         </footer>
 </body>
-</html>
+</html>-->
