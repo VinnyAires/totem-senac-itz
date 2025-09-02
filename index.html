@@ -1,19 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        a{
-            padding: 20px;
-        }
-        div{
-            background-color: chocolate;
-        }
-    </style>
-    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="scripts/carrossel.js" defer></script>
+    <title>Senac</title>
 </head>
 <body>
-    <div><a href="html/segmentos.html">Tela de Seguimentos</a></div>
+    <header>
+        <img src="img/logoSenac.png" alt="LOGO SENAC À DIREITA">
+    </header>
+    <main class="container">
+        <section class="text">
+            <h1>BEM-VINDO</h1>
+        </section>
+        <div id="imgDesconto">
+            <img src="img/desconto.png" alt="30% desconto">
+        </div>
+        
+
+        <div class="carrosel">
+            <div class="slides" id="imgs">
+                <div class="imagensSel">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="img/carrosel/01_mobile.png">
+                        <source media="(max-width:768px)" srcset="img/carrosel/01_tablet.png">
+                        <img src="img/carrosel/01_mobile.png" alt="Educação para todos" style="width:auto;">
+                    </picture> 
+                </div>
+                <div class="imagensSel">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="img/carrosel/02_mobile.png">
+                        <source media="(max-width:768px)" srcset="img/carrosel/02_tablet.png">
+                        <img src="img/carrosel/02_mobile.png" alt="Quer saber? Senac EAD" style="width:auto;">
+                    </picture> 
+                </div>
+                <div class="imagensSel">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="img/carrosel/03_mobile.png">
+                        <source media="(max-width:768px)" srcset="img/carrosel/03_tablet.png">
+                        <img src="img/carrosel/03_mobile.png" alt="Evolua sua carreira" style="width:auto;">
+                    </picture> 
+                </div>
+                <div class="imagensSel">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="img/carrosel/04_mobile.png">
+                        <source media="(max-width:768px)" srcset="img/carrosel/04_tablet.png">
+                        <img src="img/carrosel/04_mobile.png" alt="Cursos 100% online" style="width:auto;">
+                    </picture> 
+                </div>
+                <div class="imagensSel">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="img/carrosel/05_mobile.png">
+                        <source media="(max-width:768px)" srcset="img/carrosel/05.png">
+                        <img src="img/carrosel/05_mobile.png" alt="Não é filtro. É futuro!" style="width:auto;">
+                    </picture> 
+                </div>
+            </div>
+        </div>
+        <section class="botao">
+            <a href="html/segmentos.html">VER CURSOS</a>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+            <div class="logo-professor">
+                <div class="logoSenac">
+                    <img src="img/marca_branca-qioshtdj656d7xvmr6klexd6gy7kwf65t9ytcmxfwi.png" alt="LOGO SENAC">
+                </div>
+                <div class="footer-creditos">
+                    <p>Professor: Vinicius Aires</p>
+                </div>
+            </div>
+            <div class="colunas">
+                <div class="footer-nomes-colunaUm">
+                    <p>Guilherme Silva</p>
+                    <p>Hernandes Santos</p>
+                    <p>João Victor Frazão</p>
+                    <p>Brenno Otaviano</p>
+                </div>
+
+                <div class="footer-nomes-colunaDois">
+                    <p>Hitallo Felix</p>
+                    <p>Jardel Resende</p>
+                    <p>Isaac Sousa</p>
+                    <p>Paulo Otavio Neves</p>
+                </div>
+
+                <div class="footer-nomes-colunaTrês">
+                    <p>Laura da Silva</p>
+                    <p>Emanuella Souza</p>
+                    <p>Karolynne Andrade</p>
+                    <p>Miquéas Martins</p>
+                </div>
+            </div>
+        </footer>
 </body>
 </html>

@@ -1,0 +1,249 @@
+
+/*=============================================================================
+  1. VARIÁVEIS GLOBAIS
+=============================================================================*/
+:root {
+  --color-bg-header: #023e74e6;
+  --color-text: #f1f5f9;
+  --color-subtext: #cbd5e1;
+  --color-accent: #f97316;
+  --color-primary: #2563eb;
+  --color-bg-body: #000;  
+  --radius: 8px;
+  --gap: 1rem;
+  --header-height: 13vh;
+}
+
+/*=============================================================================
+  2. RESET E VIEWPORT
+=============================================================================*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--color-text);
+  background: url("../img/mobile.png") center/cover no-repeat;
+  background-color: var(--color-bg-body);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/*=============================================================================
+  3. HEADER (fixo no topo)
+=============================================================================*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background: var(--color-bg-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--gap);
+  z-index: 100;
+}
+
+header img {
+  max-height: calc(var(--header-height) * 0.6);
+  width: auto;
+}
+
+/*=============================================================================
+  4. MAIN (conteúdo abaixo do header)
+=============================================================================*/
+main.container {
+  margin-top: var(--header-height);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--gap);
+  gap: var(--gap);
+}
+
+/* Seção de texto */
+main .text h1 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+/* Banner de desconto */
+#imgDesconto {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#imgDesconto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: rotate(15deg);
+  position: relative;
+  z-index: 1;
+}
+
+/*=============================================================================
+  5. CARROSSEL (responsivo e fluido)
+=============================================================================*/
+.carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin: var(--gap) auto;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.imagensSel {
+  flex: 0 0 100%;
+  height: 100%;
+}
+
+.imagensSel picture,
+.imagensSel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*=============================================================================
+  6. BOTÃO “VER CURSOS”
+=============================================================================*/
+section.botao {
+  margin-top: var(--gap);
+}
+
+section.botao a {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+section.botao a:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+}
+
+/*=============================================================================
+  7. FOOTER (sempre ao final)
+=============================================================================*/
+footer.footer {
+  background-color: rgba(2, 62, 115, 0.65);
+  color: var(--color-text);
+  padding: var(--gap);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.logo-professor {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.logo-professor img {
+  max-height: 3rem;
+  width: auto;
+}
+
+.footer-creditos p {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+.colunas {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  text-align: center;
+}
+
+.colunas p {
+  margin-bottom: 0.5rem;
+}
+
+/*=============================================================================
+  8. MEDIA QUERIES
+=============================================================================*/
+/* Tablets e pequenos desktops */
+@media (min-width: 600px) {
+  body {
+    background: url("../img/background-tablet.png") center/cover no-repeat;
+  }
+
+  main.container {
+    padding: calc(var(--gap) * 2);
+  }
+
+  .colunas {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+  }
+}
+
+/* Totem retrato / desktops médios (>=1080px) */
+@media (min-width: 1080px) {
+  body {
+    background: url("../img/background-totem.png") center/cover no-repeat;
+  }
+
+  main.container {
+    padding: calc(var(--gap) * 2) calc(var(--gap) * 3);
+  }
+
+  .carrossel {
+    max-width: 1000px;
+  }
+
+  .colunas {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+  }
+}
+
+/* Desktops muito largos */
+@media (min-width: 1400px) {
+  body {
+    background: url("../img/background-desktop.png") center/cover no-repeat;
+  }
+}
