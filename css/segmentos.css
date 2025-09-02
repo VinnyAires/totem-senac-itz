@@ -1,7 +1,7 @@
 /* 1. Variáveis e Fontes */
 :root {
   --color-primary: #00368c;
-  --color-secondary: #f28705;
+  --color-secondary: #f97316; /*#f28705;*/
   --color-bg: #ffffff;
   --color-text: #333333;
   --gap: 1.5rem;
@@ -19,7 +19,7 @@
   font-family: "Poppins";
   src: url("../fontes/Poppins-Bold.ttf") format("truetype");
 }
-
+*{ scrollbar-width: none }
 ::-webkit-scrollbar {
     width: 0px;
 }
@@ -61,6 +61,7 @@ img {
 footer {
   padding: var(--gap);
 }
+
 .content {
   flex: 1;
   padding: var(--gap);
@@ -84,6 +85,7 @@ background-color: rgba(64, 61, 252, 0.4);
 }
 header a{
     height: 100%;
+    margin-right: 20px;
 } 
 .header__logo{
   height: 100%;
@@ -124,7 +126,7 @@ header a{
 
 /* Hover e foco visível */
 .button--primary:hover {
-  background-color: #e08217;
+  background-color: #e66204;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
@@ -174,7 +176,8 @@ header a{
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: var(--gap);
+  min-height: 100px;
+  padding: 0 20px;
   font-family: var(--font-title);
 }
 .card__text h2 {
@@ -314,18 +317,26 @@ header a{
 /*=============================================================================
   9. MEDIA QUERY: TOTEM RETRATO E DESKTOP MÉDIO (>=1080px)
 =============================================================================*/
-@media (min-width: 1080px) {
+@media (min-width: 1070px) {
 /*  body {
     background: url(../img/background-totem.png) center/cover no-repeat;
   }
 */
-  /*manter o footer na base da tela*/
+
+  header a{
+    height: 100%;
+    margin-right: 40px;
+}
+  .card{
+    max-height: 300px;
+  }
+ 
   .page-container{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
-  .page-container > footer{
+
+  footer{
     margin-top: auto;
   }
 

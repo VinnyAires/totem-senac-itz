@@ -26,6 +26,7 @@
   box-sizing: border-box;
 }
 
+*{ scrollbar-width: none }
 /* Largura da barra de rolagem */
 ::-webkit-scrollbar {
     width: 0px;
@@ -490,10 +491,10 @@ footer{
   .footer-container{
     padding-top: 20px;
   }
-    .footer__professor {
+  .footer__professor {
     /*flex: 0 0 auto;
     align-items: flex-start;*/
-     margin-bottom: 0;
+    margin-bottom: 0;
     gap: 3rem;
     flex-direction: row;
   }
