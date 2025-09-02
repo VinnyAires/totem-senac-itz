@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="icon" type="image/png" href="../img/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../img/icons/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../img/icons/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Totem SENAC" />
+    <link rel="manifest" href="../img/icons/favicon/site.webmanifest" />
+
+  <title>Tecnologia da Informação</title>
+  <link rel="stylesheet" href="../css/estilo-padrao.css">
+  <script src="../scripts/popular-cards.js" defer></script>
+</head>
+<body id="body" data-segmento="beleza">
+    <div class="page-container">
+        <header> 
+            <div class="topo">
+                <div class="topo-text">
+                    <div class="area-botao-voltar">
+                        <a href="segmentos.html" class="botao-voltar"><img src="../img/icons/icon-voltar.png" alt=""></a>
+                    </div>
+                    <h1>Tecnologia da Informação</h1>
+                    <p>
+                        Aprenda sobre desenvolvimento web, programação, segurança de dados e redes de computadores.
+                        Os cursos preparam o aluno para um mercado em constante expansão e com alta demanda.
+                    </p>
+                </div>
+           </div>
+        </header>
+        <div class="content-container">
+            <main class="container container-tecnologia">
+                <section class="turno-section" data-turno="matutino">
+                    <h2>Matutino – 08h às 12h</h2>
+                    <div id="matutino" class="cursos"></div>
+                </section>
+
+                <section class="turno-section" data-turno="vespertino">
+                    <h2>Vespertino – 14h às 18h</h2>
+                    <div id="vespertino" class="cursos"></div>
+                </section>
+
+                <section class="turno-section" data-turno="noturno">
+                    <h2>Noturno – 19h às 22h</h2>
+                    <div id="noturno" class="cursos"></div>
+                </section>
+                <div class="area-botao-subir">
+                    <a href="#body" class="botao-voltar"><img src="../img/icons/icon-subir.png" alt=""></a>
+                </div>
+                <!-- modal único que será preenchido dinamicamente -->
+                <div id="modal" class="modal">
+                    <div class="modal__content">
+                    <button class="modal__close" aria-label="Fechar">&times;</button>
+                    <h3 class="modal__title"></h3>
+                    <p class="modal__desc"></p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- TEMPLATE DE CARD - logo após o </main>, antes de fechar o body -->
+            <template id="card-template">
+                <div class="card">
+                    <h3 data-field="title"></h3>
+                    <p data-field="hours"></p>
+                    <p data-field="price"></p>
+                    <div class="buttons">
+                    <button class="inscrever">Inscreva-se</button>
+                    <button class="sobre" data-action="open-modal">Sobre</button>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer__professor">
+                    <img
+                    src="../img/logo-fecomercio.png"
+                    alt="Logo Senac"
+                    class="footer__logo"
+                    />
+                    <p><b>Professor: <br> Vinícius Aires</br></p>
+                </div>
+            
+                <div class="footer__alunos">
+                    <p><b>Alunos da Turma 2024.8.20:</b></p>  
+                    <div class="footer__students">
+                    <ul class="footer__col">
+                        <li>Guilherme Silva</li>
+                        <li>Hernandes Santos</li>
+                        <li>João Victor Frazão</li>
+                        <li>Brenno Otaviano</li>
+                    </ul>
+                    <ul class="footer__col">
+                        <li>Hitallo Felix</li>
+                        <li>Jardel Resende</li>
+                        <li>Isaac Souza</li>
+                        <li>Laura Silva</li>
+                    </ul>
+                    <ul class="footer__col">
+                        <li>Paulo Otavio Neves</li>
+                        <li>Emanuella Souza</li>
+                        <li>Karolynne Andrade</li>
+                        <li>Miquéas Martins</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
