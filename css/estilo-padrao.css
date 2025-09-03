@@ -124,7 +124,6 @@ main.container {
   display: flex;
   flex-direction: column;
 }
-.segmento-divider { grid-column: 1 / -1; }
 
 /*=============================================================================
   5. SEÇÕES DE TURNO
