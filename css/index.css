@@ -208,13 +208,14 @@ footer{
 .footer__professor {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
   gap: var(--gap);
   margin-top:0;
 }
 
 .footer__logo {
-  max-height: 30px;
+  max-height: 20px;
+  margin-right: 20px;
 }
 
 .footer__alunos {
