@@ -113,65 +113,41 @@ body {
   text-align: center;
 }
 
-/* Carrossel responsivo 
+/* ---------------------Carrossel responsivo ----------------------------------*/
+
+/* === CARROSSEL WRAPPER === */
 .carrossel {
-  position: relative;
   width: 100%;
-  max-width: 900px;
-  aspect-ratio: 16/9;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.slides {
-  display: flex;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-  will-change: transform;
-}
-
-.slide {
-  flex: 0 0 100%;
-  height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}*/
-
-/* wrapper visível, com overflow hidden */
-/* container visível, overflow hidden */
-.carrossel {
-  position: relative;
-  width: 100%;
-  max-width: 900px;       /* ou 100% do pai */
-  aspect-ratio: 16/9;     /* mantém proporção */
+  max-width: 900px;    /* ou 100% do pai, se preferir */
   overflow: hidden;
   margin: 1rem auto;
+  position: relative;
 }
 
-/* flex-container sem width fixa */
+/* === FLEX CONTAINER === */
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
 }
 
-/* cada slide ocupa 100% do wrapper */
+/* === CADA SLIDE === */
 .imagensSel {
-  flex: 0 0 100%;
-  height: 100%;
+  /* não use height fixa aqui */
+  flex: 0 0 auto;      /* o JS vai setar width */
 }
 
+/* garante que a img nunca é cortada e mantém proporção */
 .imagensSel img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
+
+
+/* ---------------------Carrossel responsivo ----------------------------------*/
 
 
 /* Botão Ver Cursos */
@@ -193,6 +169,10 @@ body {
   background: #ea580c;
   transform: translateY(-2px);
 }
+
+
+
+
 
 /*=============================================================================
   FOOTER
