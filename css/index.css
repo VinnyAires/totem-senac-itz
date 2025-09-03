@@ -25,7 +25,9 @@
 ::-webkit-scrollbar {
     width: 0px;
 }
-
+/*=============================================================================
+  HTML, BODY
+=============================================================================*/
 html, body {
   height: 100%;
   max-width: 100vh;
@@ -42,33 +44,31 @@ body {
   background: url(../img/mobile.png) center/cover no-repeat;
   overflow-x: hidden; /* Previne scroll horizontal */
   background-attachment: fixed;
-  outline: 3px dashed red !important;
-
+  
 }
 
 /*=============================================================================
-  WRAPPER PRINCIPAL
+  CONTAINER PRINCIPAL
 =============================================================================*/
 .page-container {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* 1920px num totem 1080×1920 */
+  height: 100vh; 
   width: 100%;
   margin: 0 auto;
   position: relative;
-  outline: 5px dashed lime !important;
 }
 
 /*=============================================================================
   HEADER
 =============================================================================*/
 .header {
-  height: var(--header-height);
+  flex: 0 0 var(--header-height);
   background: var(--color-bg-header);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 15vh;
+  overflow: hidden; /* garante que nada vaze */
 }
 
 .header__logo {
@@ -83,7 +83,7 @@ body {
   flex: 1 1 auto;
   overflow-y: auto;
   padding: var(--gap);
-  padding-bottom: 1rem;
+  padding-bottom: calc(var(--footer-height) + var(--gap));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,38 +91,28 @@ body {
   gap: var(--gap);
 
 }
-
-/* Imagem de desconto 
-#discount-image {
-  width: 80%;
-  max-width: 320px;
-}
-#discount-image img {
-  width: 100%;
-  display: block;
-}
-*/
-
-/* 2) Posiciona o banner de desconto no topo-direito */
+/*=============================================================================
+  BANNER DE DESCONTO (FLUTUANTE)
+=============================================================================*/
 #discount-image {
   position: absolute;
-  top: -1rem;    /* afasta 1rem do topo */
-  right: -1rem;  /* afasta 1rem da borda direita */
-  z-index: 20;  /* acima de header/main */
-  width: 30%; /* tamanho base, ajuste conforme necessidade */
-  /* faz o giro */
+  top: -0.5rem;
+  right: -0.5rem;
+  z-index: 20;
+  width: 30%;
   transform: rotate(35deg);
   transform-origin: center center;
 }
 
-/* Garante que a imagem interna escale corretamente */
 #discount-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Mensagem de boas-vindas */
+/*=============================================================================
+  MENSAGEM DE BOAS-VINDAS
+=============================================================================*/
 .welcome h1 {
   font-size: 2rem;
   text-align: center;
@@ -130,13 +120,15 @@ body {
 
 /* ---------------------Carrossel responsivo ----------------------------------*/
 
-/* === CARROSSEL WRAPPER === */
+/* === CARROSSEL CONTAINER === */
 .carrossel {
   width: 100%;
-  max-width: 900px;    /* ou 100% do pai, se preferir */
   overflow: hidden;
-  margin: 1rem auto;
+  margin: 1rem 0;
   position: relative;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* === FLEX CONTAINER === */
@@ -148,8 +140,8 @@ body {
 
 /* === CADA SLIDE === */
 .imagensSel {
-  /* não use height fixa aqui */
-  flex: 0 0 auto;      /* o JS vai setar width */
+  /* não usar height fixa aqui */
+  flex: 0 0 auto;
 }
 
 /* garante que a img nunca é cortada e mantém proporção */
@@ -164,13 +156,16 @@ body {
 
 /* ---------------------Carrossel responsivo ----------------------------------*/
 
-
-/* Botão Ver Cursos */
+/*=============================================================================
+  BOTÃO “VER CURSOS”
+=============================================================================*/
 .action {
   margin-top: var(--gap);
+  text-align: center;
 }
 
 .button--primary {
+  display: inline-block;
   background: var(--color-accent);
   color: #fff;
   padding: 0.75rem 1.5rem;
@@ -185,21 +180,14 @@ body {
   transform: translateY(-2px);
 }
 
-
-
-
-
 /*=============================================================================
   FOOTER
 =============================================================================*/
-footer{
-    width: 100%;
-    flex: 0 0 auto;
-    margin-top: auto;
-    height: auto;
-    background-color: rgba(2, 62, 115, 0.65);
-    
+footer {
+  flex: 0 0 var(--footer-height);
+  background: rgba(2, 62, 115, 0.65);
 }
+
 .footer-container {
   width: 100%;
   color: var(--color-text);
@@ -216,17 +204,16 @@ footer{
   flex-direction: row;
   align-items: center;
   gap: var(--gap);
-  margin-top:0;
 }
 
 .footer__logo {
   max-height: 20px;
-  margin-right: 20px;
+  margin-right: var(--gap);
 }
 
 .footer__alunos {
-  text-align: left;
   margin: 0;
+  text-align: left;
 }
 
 .footer__alunos > p {
@@ -252,10 +239,25 @@ footer{
 /*=============================================================================
   MEDIA QUERIES
 =============================================================================*/
-/* Pequenos desktops e tablets */
+/* Tablets e pequenos desktops (600px–1079px) */
 @media (min-width: 600px) {
+  .main-content {
+    padding: calc(var(--gap) * 1.5);
+  }
+
   .welcome h1 {
     font-size: 2.5rem;
+  }
+
+  #discount-image {
+    width: 25%;
+    top: -0.75rem;
+    right: -0.75rem;
+  }
+
+  .carrossel {
+    max-width: 720px;
+    margin: 2rem auto;
   }
 
   .button--primary {
@@ -267,26 +269,34 @@ footer{
   }
 }
 
-/* Grandes telas (totem em retrato 1080×1920) */
+/* Totem retrato e desktops médios (1080px–1399px) */
 @media (min-width: 1080px) {
+  .page-container {
+    max-width: 1080px;
+    height: 100vh;
+  }
+
   .main-content {
     padding-inline: 2rem;
   }
-  .footer-container{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: row;
+
+  #discount-image {
+    width: 20%;
+    top: -1rem;
+    right: -1rem;
   }
-  .footer__professor {
-    /*flex: 0 0 auto;
-    align-items: flex-start;*/
-    margin-bottom: 0;
-    gap: 3rem;
-    flex-direction: row;
+
+  .carrossel {
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+
+  footer {
+    padding: var(--gap) 2rem;
   }
 }
 
-/* Ultra-wide desktops */
+/* Ultra-wide desktops (≥1400px) */
 @media (min-width: 1400px) {
   .page-container {
     max-width: 1400px;
