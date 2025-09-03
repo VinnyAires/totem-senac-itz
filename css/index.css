@@ -49,13 +49,10 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;           /* 1920px num totem 1080×1920 */
+  min-height: 100vh;        /* 1920px num totem 1080×1920 */
   width: 100%;
   margin: 0 auto;
-
   position: relative;
-
-  margin: 0 auto;
 }
 
 /*=============================================================================
@@ -81,11 +78,13 @@ body {
   flex: 1;
   overflow-y: auto;
   padding: var(--gap);
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--gap);
+
 }
 
 /* Imagem de desconto 
