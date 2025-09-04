@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body com imagem de fundo */
+body {
+  min-height: 100vh;
+  background-image: url('sua-imagem.jpg'); /* Substitua pelo caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Wrapper centralizado e limitado */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/* Main */
+.page-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer fixado ao final */
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+}
+
+/* 🧠 Media Queries */
+
+/* Tablets (≥600px) */
+@media (min-width: 600px) {
+  .content-wrapper {
+    padding: 2rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-container p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Totem vertical (1080x1920) */
+@media (min-width: 1080px) and (min-height: 1920px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .content-wrapper {
+    padding: 3rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+}

@@ -15,9 +15,11 @@
     <!-- DEBUG: garanta que o browser aplique esta regra -->
   <style>
     html{
-      outline: 2px dashed rgb(255, 0, 0) !important;
+      outline: 2px dashed rgb(238, 255, 0) !important;
     } 
-    body, 
+    body{
+      border: 2px dotted rgb(255, 0, 0) !important;
+    } 
     .page-container {
       /*outline: 2px dashed magenta !important;
       /* também tente border se outline não aparecer */
@@ -26,6 +28,7 @@
   </style>
   <!-- CSS principal -->
   <link rel="stylesheet" href="css/index.css" />
+  <!--<link rel="stylesheet" href="stylte.css">-->
 
   <!-- Script do carrossel -->
   <script src="scripts/carrossel.js" defer></script>
@@ -34,8 +37,11 @@
   <div class="page-container">
 
     <!-- HEADER: logo centralizada -->
-    <header class="header">
-      <img src="img/logo-branca.png" alt="Logo SENAC" class="header__logo" />
+    <header>
+      <div class="header">
+        <img src="img/logo-branca.png" alt="Logo SENAC" class="header__logo" />
+      </div>
+      
     </header>
 
     <!-- MAIN: imagem de desconto, boas-vindas, carrossel e botão -->

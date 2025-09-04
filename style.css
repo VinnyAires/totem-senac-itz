@@ -1,0 +1,204 @@
+/* 1) RESET E OVERFLOW GLOBAL 
+   — overflow-x escondido para nunca criar scroll horizontal  
+   — overflow-y automático para permitir scroll vertical quando necessário */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('img/mobile.png') center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 2) CONTAINER PRINCIPAL */
+.page-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* 3) HEADER */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.header {
+  text-align: center;
+}
+.header__logo {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+}
+
+/* 4) MAIN */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;    /* reduzido para evitar overflow vertical */
+  text-align: center;
+  /* remove overflow hidden daqui para permitir scroll vertical em paisagem */
+}
+
+#discount-image {
+  position: relative;  /* de absolute → relative para não “vazar” a viewport */
+  width: 25%;
+  transform: rotate(35deg);
+  margin-bottom: -1rem;
+}
+#discount-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.welcome h1 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+}
+
+.carrossel {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.imagensSel {
+  flex: 0 0 auto;
+}
+.imagensSel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* BOTÃO */
+.button--primary {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* 5) FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem;  /* reduzido para não criar altura extra */
+  font-size: 0.8rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.footer__logo {
+  max-width: 100px;
+  height: auto;
+}
+.footer__students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer__col {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 6) MOBILE PAISAGEM: manter scroll vertical ativo */
+@media (max-width: 799px) and (orientation: landscape) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+/* 7) BREAKPOINT EM 800px: layout intermediário responsivo */
+@media (min-width: 800px) {
+  /* reorganiza main em linha, evita quebras horizontais */
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  /* desconto deixa de girar e se posiciona sem vazar */
+  #discount-image {
+    position: static;
+    transform: none;
+    width: 20%;
+    margin: 0;
+  }
+
+  .welcome h1 {
+    font-size: 2.5rem;
+  }
+
+  .button--primary {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+  }
+
+  .carrossel {
+    aspect-ratio: 4/3;
+  }
+}
+
+/* 8) DESKTOP E TOTEM (1080×1920) seguem seus media queries atuais */
+@media (min-width: 1024px) {
+  body { background-image: url('img/background-totem.png'); }
+  .header__logo { max-width: 250px; }
+  .welcome h1 { font-size: 3rem; }
+  .slides { flex-wrap: nowrap; }
+  .imagensSel img { max-width: 300px; }
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1080px) and (min-height: 1920px) {
+  body {
+    background-image: url('img/background-totem.png');
+    font-size: 1.5rem;
+  }
+  .welcome h1 { font-size: 4rem; }
+  .button--primary {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+  .footer__students { gap: 3rem; }
+  .footer__col li { font-size: 1.2rem; }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url('img/background-desktop.png');
+  }
+}
