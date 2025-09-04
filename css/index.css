@@ -291,6 +291,9 @@ footer {
     padding-inline: 2rem;
   }
 
+  .welcome h1 {
+    font-size: 3rem;
+  }
   #discount-image {
     width: 20%;
     top: -1rem;
@@ -304,6 +307,12 @@ footer {
 
   footer {
     padding: var(--gap) 2rem;
+  }
+  .footer-container{
+    font-size: 1rem;
+  }
+  .footer__logo {
+  max-height: 50px;
   }
 }
 
