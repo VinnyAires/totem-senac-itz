@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   goTo(0);
   start();
 });
+
+/*.  ############## MOSTRA O TAMAHO DA JANELA NAVEGADO#############
 (function(){
   const badge = document.createElement('div');
   Object.assign(badge.style, {
@@ -71,3 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', update);
   update();
 })();
+*/

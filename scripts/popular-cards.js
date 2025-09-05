@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 });
 
-
 /*
 document.addEventListener('DOMContentLoaded', async () => {
   // 1) Detecta automaticamente o segmento a partir de data-segmento no <body>
