@@ -6,7 +6,7 @@
   --color-text: #333333;
   --gap: 1.5rem;
   --font-base: Arial, sans-serif;
-  --font-display: "Archivo Black", sans-serif;
+  --font-display: "Archivo", sans-serif;
   --font-title: "Poppins", sans-serif;
   --spacing: 1rem;
 }
@@ -31,11 +31,15 @@
 }
 html, body{
   height: 100%;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden !important;/* descarta qualquer scroll horizontal */
+  overflow-y: auto;    /* permite scroll vertical quando realmente necessário */
 }
 body {
   font-family: var(--font-base);
   color: var(--color-text);
-  background: url("../img/background.jpeg") center/cover no-repeat;
+  background: url("../img/mobile.png") center/cover no-repeat;
   background-attachment: fixed;
   line-height: 1.5;
   overflow-x: hidden; /* Previne scroll horizontal */
@@ -54,7 +58,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  max-width: 1080px;
+
   margin: 0 auto;
 }
 .header-content,
@@ -71,6 +75,7 @@ footer {
 header{
   background-color: rgba(64, 61, 252, 0.4);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .header-content{
   text-align: center;
@@ -80,7 +85,7 @@ header{
   padding: 10px 0;
   margin-bottom: 2vh;
   height: 15vh;
-  width: 100%;
+  max-width: 1100px;
   box-sizing: border-box;
 }
 header a{
@@ -189,6 +194,7 @@ header a{
   Footer de professor e alunos (mobile-first)
 ===========================================================================*/
 .footer {
+
   background-color: rgba(2, 62, 115, 0.65);
   color: var(--color-bg);
 }
@@ -226,7 +232,7 @@ header a{
 =================================================*/
 @media (min-width: 680px) {
   body{
-    background: url("../img/background-totem.png") center/cover no-repeat;
+    background: url("../img/background-tablet.png") center/cover no-repeat;
     background-attachment: fixed;
     line-height: 1.5;
   }
@@ -277,7 +283,7 @@ header a{
     --gap: 2rem;
   }
    body{
-    background: url("../img/background-desktop.png") center/cover no-repeat;
+    background: url("../img/background-totem.png") center/cover no-repeat;
     background-attachment: fixed;
     line-height: 1.5;
   }
@@ -324,25 +330,42 @@ header a{
     background: url(../img/background-totem.png) center/cover no-repeat;
   }
 */
-
-  header a{
-    height: 100%;
-    margin-right: 40px;
+.page-container{
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-  .card{
-    max-height: 300px;
-  }
- 
-  .page-container{
-    display: flex;
-    flex-direction: column;
-  }
+.content{
+  max-width: 1100px;
+}
+.header-content{
+  max-width: 1100px;
+}
+header a{
+  height: 100%;
+  margin-right: 40px;
+}
+.button--primary {
+  padding: 1rem 2rem;
+}
+.card{
+  max-height: 300px;
+}
 
-  footer{
-    margin-top: auto;
+footer{
+  margin-top: auto;
+}
+.footer-content{
+  font-size: 1rem;
+  max-width: 1100px;
+}
+}
+@media (min-width: 1400px) {
+  body{
+    background-image: url("../img/background-desktop.png");
   }
-  .footer-content{
-    font-size: 1rem;
-  }
-
+  .button--primary {
+   font-size: 0.7rem;
+    padding: 1rem 0.8rem;
+}
 }

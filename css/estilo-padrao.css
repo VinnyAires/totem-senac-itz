@@ -506,7 +506,7 @@ footer{
     flex-direction: row;
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
    body {
     background: url(../img/background-desktop.png) center/cover no-repeat;
   }

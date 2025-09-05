@@ -324,9 +324,6 @@ footer {
     background-image: url(../img/background-desktop.png);
     overflow-y: auto;    /* permite scroll vertical quando realmente necessário */;
   }
-  header{
- 
-     }
   .page-container {
     max-width: 100%;
     align-items: center;
