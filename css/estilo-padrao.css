@@ -80,7 +80,6 @@ header{
 .topo-text h1 {
   width: 100%;
   text-align: center;
-  margin-left: 20px;
   position: fixed;
   background: var(--color-bg-header);
   padding: var(--gap);
@@ -198,7 +197,7 @@ main.container {
   color: var(--color-card-sub);
   margin-bottom: 0.5rem;
 }
-
+ 
 /*=============================================================================
   8. BOTOES NO CARD
 =============================================================================*/
@@ -208,7 +207,18 @@ main.container {
   gap: 0.5rem;
 }
 
-button {
+.inscrever {
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+}
+.inscrever:hover {
+  background: #ea580c;
+}
+
+.inscrever, button {
   flex: 1;
   padding: 0.6rem;
   border: none;
@@ -221,14 +231,6 @@ button {
 
 button:hover {
   transform: scale(1.03);
-}
-
-.inscrever {
-  background: var(--color-accent);
-  color: #fff;
-}
-.inscrever:hover {
-  background: #ea580c;
 }
 
 .sobre {
