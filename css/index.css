@@ -92,9 +92,8 @@ header{
 .main-content {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: var(--gap);
   min-height: 60vh;
-  padding: var(--gap);
+/*  padding: var(--gap);*/
   display: flex;
   flex-direction: column; 
   justify-content: space-evenly;
@@ -136,9 +135,10 @@ header{
   overflow: hidden;
   margin: 1rem 0;
   position: relative;
-  aspect-ratio: 16/9;
+  /*aspect-ratio: 16/9;*/
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  
 }
 
 /* === FLEX CONTAINER === */
@@ -146,12 +146,14 @@ header{
   display: flex;
   transition: transform 0.5s ease-in-out;
   will-change: transform;
+  
 }
 
 /* === CADA SLIDE === */
 .imagensSel {
   /* não usar height fixa aqui */
   flex: 0 0 auto;
+  
 }
 
 /* garante que a img nunca é cortada e mantém proporção */
@@ -161,6 +163,7 @@ header{
   height: auto;
   object-fit: contain;
   object-position: center;
+  
   
 }
 
@@ -254,7 +257,7 @@ footer {
  
   .main-content {
     height: 100%;
-    padding: calc(var(--gap) * 1.5);
+   /* padding: calc(var(--gap) * 1.5);*/
   }
 
   .welcome h1 {
@@ -293,16 +296,17 @@ footer {
     min-height: 100%;
   }
 
+  /*
   .main-content {
     padding-inline: 2rem;
-  }
+  } */
 
   .welcome h1 {
     font-size: 3rem;
   }
 
   .carrossel {
-    max-width: 900px;
+    max-width: 1080px;
     margin: 2rem auto;
   }
 
