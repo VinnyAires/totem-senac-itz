@@ -99,7 +99,7 @@ header{
 
 .area-botao-voltar {
   position: fixed;
-  top: 15px;
+  top: 10px;
   left: var(--gap);
   z-index: 2;
 }
@@ -409,6 +409,7 @@ footer{
     max-width: 1100px;
   }
   .area-botao-voltar {
+    top: 15px;
     left: 20%;
   }
   
@@ -474,16 +475,21 @@ footer{
   body {
     background: url(../img/background-totem.png) center/cover no-repeat;
   }
-
   .topo-text h1{
-    font-size: 2rem;
-    margin-top: 0;
+    font-size: 3rem;
+    padding: 1.5rem 0;
   }
-
   .topo-text p{
     font-size: 1.2rem;
+    padding-top: 8rem;
   }
-  
+  .area-botao-voltar{
+    top: 20px;
+    left: 5rem;
+  }
+  .botao-voltar img {
+    width: 4rem;
+  }
   main.container {
     max-width: 1100px;
     margin: 0 auto;
@@ -511,5 +517,22 @@ footer{
 @media (min-width: 1400px) {
    body {
     background: url(../img/background-desktop.png) center/cover no-repeat;
+  }
+  .topo-text h1{
+    font-size: 2rem;
+    margin-top: 0;
+    padding: var(--gap);
+  }
+
+  .topo-text p{
+    font-size: 1.2rem;
+    padding: var(--gap);
+    margin-top: 4rem;
+  }
+  .area-botao-voltar{
+    left: 20%;
+  }
+  .botao-voltar img {
+    width: 2.5rem;
   }
 }
