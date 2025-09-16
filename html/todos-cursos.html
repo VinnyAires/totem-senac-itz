@@ -45,7 +45,9 @@
       </a>
     </div>
 
-    <!-- MODAL único -->
+    <!-- MODAL  SOBRE  único -->
+    <div class="overlay" id="modal-overlay"></div><!--Desfoque de fundo-->
+
     <div id="modal" class="modal">
       <div class="modal__content">
         <button class="modal__close" aria-label="Fechar">&times;</button>
@@ -54,8 +56,25 @@
       </div>
     </div>
 
-    <!-- TEMPLATE de card -->
-    <template id="card-template">
+
+    <!-- TEMPLATE de card COM DESCONTO-->
+     <template id="card-template">
+        <div class="card">
+          <h3 data-field="title"></h3>
+          <p data-field="hours"></p>
+          <p data-field="price">
+            <span class="original-price"></span>
+            <span class="discounted-price"></span>
+          </p>
+          <div class="buttons">
+            <a id="botton-inscrever" class="inscrever" href="https://forms.office.com/r/LjnvAMnqFk">Inscreva-se</a>
+            <button class="sobre" data-action="open-modal">Sobre</button>
+          </div>
+        </div>
+      </template>
+
+<!-- TEMPLATE de card COM DESCONTO   
+      <template id="card-template">
       <div class="card">
         <h3 data-field="title"></h3>
         <p data-field="hours"></p>
@@ -65,7 +84,7 @@
           <button class="sobre" data-action="open-modal">Sobre</button>
         </div>
       </div>
-    </template>
+    </template> -->
 
     <!-- FOOTER (mesma estrutura que as outras páginas) -->
     <footer>

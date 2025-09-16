@@ -52,18 +52,36 @@
                 <div class="area-botao-subir">
                     <a href="#body" class="botao-voltar"><img src="../img/icons/icon-subir.png" alt=""></a>
                 </div>
-                <!-- modal único que será preenchido dinamicamente -->
+
+                <!-- modal único SOBRE que será preenchido dinamicamente -->
+                <div class="overlay" id="modal-overlay"></div>
+
                 <div id="modal" class="modal">
                     <div class="modal__content">
-                    <button class="modal__close" aria-label="Fechar">&times;</button>
-                    <h3 class="modal__title"></h3>
-                    <p class="modal__desc"></p>
+                        <button class="modal__close" aria-label="Fechar">&times;</button>
+                        <h3 class="modal__title"></h3>
+                        <p class="modal__desc"></p>
                     </div>
                 </div>
             </main>
 
-            <!-- TEMPLATE DE CARD - logo após o </main>, antes de fechar o body -->
+            <!-- TEMPLATE DE CARD - COM DESCONTO- logo após o </main>, antes de fechar o body--> 
             <template id="card-template">
+                <div class="card">
+                    <h3 data-field="title"></h3>
+                    <p data-field="hours"></p>
+                    <p data-field="price">
+                    <span class="original-price"></span>
+                    <span class="discounted-price"></span>
+                    </p>
+                    <div class="buttons">
+                    <a id="botton-inscrever" class="inscrever" href="https://forms.office.com/r/LjnvAMnqFk">Inscreva-se</a>
+                    <button class="sobre" data-action="open-modal">Sobre</button>
+                    </div>
+                </div>
+            </template>
+            <!-- TEMPLATE DE CARD - SEM DESCONTO- logo após o </main>, antes de fechar o body
+             <template id="card-template">
                 <div class="card">
                     <h3 data-field="title"></h3>
                     <p data-field="hours"></p>
@@ -73,7 +91,8 @@
                         <button class="sobre" data-action="open-modal">Sobre</button>
                     </div>
                 </div>
-            </template>
+            </template>-->
+
         </div>
         <footer>
             <div class="footer-container">
