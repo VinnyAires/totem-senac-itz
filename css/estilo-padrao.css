@@ -364,6 +364,63 @@ button:hover {
   line-height: 1.5;
 }
 
+
+/*==========================================================================
+  IFRAME Inscreva-se
+===========================================================================*/
+
+/* ANIMAÇÃO DO IFRAME */
+.iframe-wrapper {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 100;
+}
+
+.iframe-wrapper.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+#iframe-container iframe {
+  width: 90%;
+  height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+#iframe-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#iframe-close:hover {
+  color: #f97316;
+  transform: rotate(90deg);
+}
+
+
+
+
 /*==========================================================================
   Footer de professor e alunos (mobile-first)
 ===========================================================================*/
