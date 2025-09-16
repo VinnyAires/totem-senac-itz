@@ -122,6 +122,7 @@ main.container {
   padding-inline: var(--gap);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /*=============================================================================
@@ -245,10 +246,20 @@ button:hover {
     Botão Subir
 =====================================================================*/
 .area-botao-subir {
-  text-align: right;
-  top: 18px;
+  position: sticky;   /* "fixa" mas respeita os limites do main */
+  bottom: 20px;       /* distância do final do main */
+  display: flex;
+  justify-content: flex-end; /* joga para direita */
   margin-bottom: var(--gap);
   z-index: 2;
+}
+.area-botao-subir img{
+  
+  border-radius: 50%;
+  background-color: #1e293b;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .botao-voltar img {
