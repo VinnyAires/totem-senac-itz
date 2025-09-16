@@ -5,7 +5,7 @@ function startInactivityTimer() {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
       window.location.href = '../index.html';
-    }, 300000); // 5 minutos = 300000 ms
+    }, 180000); // 3 minutos = 180000 ms e 5 minutos = 300000 ms
   }
 
   // Eventos que indicam atividade do usuário
