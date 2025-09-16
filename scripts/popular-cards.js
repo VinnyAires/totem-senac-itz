@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         modalTimeout = setTimeout(() => {
           modal.classList.remove('modal--open');  // Fecha o modal automaticamente
           overlay.classList.remove('active');     // Remove o fundo desfocado
-        }, 120000); // 2 minutos = 120.000 milissegundos
+        }, 60000); // 1 minutos = 60.000 milissegundos
       });
 
       // Configura botão “Inscreva-se” para abrir o formulário em iframe

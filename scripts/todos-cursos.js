@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const url = '../dados-cursos/cursos.json';
   let data; // Variável que armazenará os dados carregados
 
-  // Tenta carregar os dados via fetch
+  // Tenta carregar os dados via fetch com tratamento de erro
   try {
     const res = await fetch(url); // Faz a requisição HTTP
     if (!res.ok) throw new Error(`HTTP ${res.status}`); // Se a resposta não for OK, lança erro
@@ -28,11 +28,22 @@ document.addEventListener('DOMContentLoaded', async () => {
   const closeBtn  = modal.querySelector('.modal__close'); // Botão de fechar o modal
   let modalTimeout; // Controle de tempo para fechamento automático do modal
 
-  // Evento para fechar o modal ao clicar no botão “×”
+  // Referências ao iframe de inscrição
+  const iframeContainer = document.getElementById('iframe-container'); // Container do iframe
+  const iframeFrame     = document.getElementById('form-frame');       // Elemento <iframe>
+  const iframeCloseBtn  = document.getElementById('iframe-close');     // Botão de fechar o iframe
+
+  // Evento para fechar o modal manualmente
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('modal--open'); // Fecha o modal
-    overlay.classList.remove('active'); // Remove o fundo desfocado
-    clearTimeout(modalTimeout); // Cancela o fechamento automático
+    overlay.classList.remove('active');    // Remove o fundo desfocado
+    clearTimeout(modalTimeout);            // Cancela o fechamento automático
+  });
+
+  // Evento para fechar o iframe manualmente
+  iframeCloseBtn.addEventListener('click', () => {
+    iframeContainer.classList.remove('active'); // Esconde o iframe
+    iframeFrame.src = ''; // Limpa o conteúdo carregado
   });
 
   // Função auxiliar para capitalizar a primeira letra de uma string
@@ -43,14 +54,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   Object.entries(data.turnoLabels).forEach(([turno, label]) => {
     // Cria uma seção para o turno
     const section = document.createElement('section');
-    section.className = 'turno-section'; // Classe para estilização
-    section.innerHTML = `<h2>${capitalize(turno)} – ${label}</h2>`; // Título da seção
-    main.appendChild(section); // Adiciona a seção ao conteúdo principal
+    section.className = 'turno-section';
+    section.innerHTML = `<h2>${capitalize(turno)} – ${label}</h2>`;
+    main.appendChild(section);
 
     // Cria um container para os cards de cursos
     const container = document.createElement('div');
-    container.className = 'cursos'; // Classe para grid de cards
-    section.appendChild(container); // Adiciona o container à seção
+    container.className = 'cursos';
+    section.appendChild(container);
 
     // Filtra os cursos que pertencem ao turno atual
     const cursosDoTurno = data.cursos.filter(c => c.turno === turno);
@@ -90,23 +101,30 @@ document.addEventListener('DOMContentLoaded', async () => {
         </span>
       `;
 
-      /*===============CASO SEJA DEIXAR APENAS O VALOR SEM DESCONTO ==============
+      /*===============CASO SEJA DEIXAR APENAS O VALOR SEM DESCONTO============================
       const priceNode = clone.querySelector('[data-field="price"]');
       priceNode.textContent = `Valor: ${valorOriginalBRL}`;
       //===============FIM SEM DESCONTO========================================*/
 
-      // Configura o botão “Sobre” para abrir o modal com detalhes
+      // Configura o botão “Sobre” para abrir o modal com fundo desfocado e timeout
       clone.querySelector('[data-action="open-modal"]').addEventListener('click', () => {
-        titleEl.textContent = curso.titulo; // Título do curso no modal
-        descEl.textContent  = curso.descricao; // Descrição do curso no modal
-        modal.classList.add('modal--open'); // Exibe o modal
-        overlay.classList.add('active'); // Ativa o fundo desfocado
+        titleEl.textContent = curso.titulo;      // Título do curso no modal
+        descEl.textContent  = curso.descricao;   // Descrição do curso no modal
+        modal.classList.add('modal--open');      // Exibe o modal
+        overlay.classList.add('active');         // Ativa o fundo desfocado
 
-        clearTimeout(modalTimeout); // Limpa qualquer timeout anterior
+        clearTimeout(modalTimeout);              // Limpa timeout anterior
         modalTimeout = setTimeout(() => {
           modal.classList.remove('modal--open'); // Fecha o modal automaticamente
-          overlay.classList.remove('active'); // Remove o fundo desfocado
+          overlay.classList.remove('active');    // Remove o fundo desfocado
         }, 60000); // 1 minuto
+      });
+
+      // Configura o botão “Inscreva-se” para abrir o formulário em iframe com animação
+      clone.querySelector('.inscrever').addEventListener('click', (e) => {
+        e.preventDefault(); // Impede navegação direta
+        iframeFrame.src = e.currentTarget.href; // Define o link do formulário
+        iframeContainer.classList.add('active'); // Exibe o iframe sobre a página
       });
 
       // Adiciona o card ao container da seção
