@@ -1,125 +1,115 @@
 { 
-
     "turnoLabels": { 
-
         "matutino": "08h às 12h", 
-
         "vespertino": "14h às 18h", 
-
         "noturno": "19h às 22h" 
-
     }, 
 
     "cursos": [ 
-
         { 
-
             "segmento": "tecnologia", 
-
             "turno": "matutino", 
-
             "titulo": "Introdução à Informática – Windows e Office", 
-
             "ch": 80, 
-
             "preco": 429, 
-
             "descricao": "Promover Conhecimentos Básicos de Informática no Windows e Office." 
 
         }, 
 
         { 
-
             "segmento": "tecnologia", 
-
             "turno": "vespertino", 
-
             "titulo": "Introdução à Informática – Windows e Office", 
-
             "ch": 80, 
-
             "preco": 429, 
-
             "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
-
         }, 
 
         { 
-
             "segmento": "tecnologia", 
-
             "turno": "noturno", 
-
             "titulo": "Introdução à Informática – Windows e Office", 
-
             "ch": 80, 
-
             "preco": 429, 
-
             "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
-
         }, 
 
         { 
-
-            "segmento": "tecnologia", 
-
-            "turno": "matutino", 
-
-            "titulo": "Montagem e Manutenção de Computadores / Notebooks", 
-
-            "ch": 120, 
-
-            "preco": 707, 
-
-            "descricao": " Realizar a montagem, desmontagem e manutenção de computadores e notebooks conforme normas e procedimentos técnicos. " 
+            "segmento": "Comunicação", 
+            "turno": "noturno", 
+            "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
+            "ch": 20, 
+            "preco": 113, 
+            "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
 
         }, 
-
-        { 
-
+{ 
             "segmento": "tecnologia", 
-
-            "turno": "matutino", 
-
-            "titulo": "Programação para Robótica", 
-
+            "turno": "noturno", 
+            "titulo": "Excel Avançado", 
             "ch": 60, 
+            "preco": 463, 
+            "descricao": "Utilizar os recursos avançados da planilha eletrônica Excel." 
+        },
+        { 
+            "segmento": "gestao", 
+            "turno": "matutino", 
+            "titulo": "Preparando-se para o Mercado de Trabalho", 
+            "ch": 20, 
+            "preco": 99, 
+            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        },
+        { 
+            "segmento": "gestao", 
+            "turno": "vespertino", 
+            "titulo": "Preparando-se para o Mercado de Trabalho", 
+            "ch": 20, 
+            "preco": 99, 
+            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        },
+        { 
+            "segmento": "gestao", 
+            "turno": "noturno", 
+            "titulo": "Preparando-se para o Mercado de Trabalho", 
+            "ch": 20, 
+            "preco": 99, 
+            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        },
+         
 
+
+
+
+
+
+
+
+        { 
+            "segmento": "tecnologia", 
+            "turno": "matutino", 
+            "titulo": "Programação para Robótica", 
+            "ch": 60, 
             "preco": 370, 
-
             "descricao": "Desenvolva Protótipos e Softwares Embarcados para Aplicações Robóticas." 
 
         }, 
 
         { 
-
             "segmento": "tecnologia", 
-
             "turno": "noturno", 
-
             "titulo": "Business Intelligence com Power BI", 
-
             "ch": 40, 
-
             "preco": 177, 
-
             "descricao": " Elaborar relatórios dinâmicos/dashboards, de acordo com as premissas de configurações de cada plataforma. " 
 
         }, 
 
         { 
-
             "segmento": "tecnologia", 
-
             "turno": "noturno", 
-
             "titulo": "Programador de Sistemas", 
-
             "ch": 200, 
-
             "preco": 758, 
-
             "descricao": "Formar profissionais com competências para atuar e intervir em seu campo de trabalho, com foco em resultados. " 
 
         }, 
@@ -156,21 +146,7 @@
 
         }, 
 
-        { 
-
-            "segmento": "tecnologia", 
-
-            "turno": "noturno", 
-
-            "titulo": "Excel Avançado", 
-
-            "ch": 60, 
-
-            "preco": 463, 
-
-            "descricao": "Utilizar os recursos avançados da planilha eletrônica Excel." 
-
-        }, 
+         
 
         { 
 
@@ -252,21 +228,7 @@
 
         }, 
 
-        { 
-
-            "segmento": "gestao", 
-
-            "turno": "matutino", 
-
-            "titulo": "Preparando-se para o Mercado de Trabalho", 
-
-            "ch": 20, 
-
-            "preco": 99, 
-
-            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
-
-        }, 
+        
 
         { 
 
@@ -556,21 +518,6 @@
 
         }, 
 
-        { 
-
-            "segmento": "comunicacao", 
-
-            "turno": "noturno", 
-
-            "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
-
-            "ch": 20, 
-
-            "preco": 113, 
-
-            "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
-
-        }, 
 
         { 
 
