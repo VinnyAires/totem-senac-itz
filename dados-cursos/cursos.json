@@ -12,7 +12,7 @@
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
         "preco": 429, 
-        "descricao": "Promover Conhecimentos Básicos de Informática no Windows e Office." 
+        "descricao": "O curso de Introdução à Informática – Windows e Office oferece ao aluno os conhecimentos básicos para utilizar o computador de forma prática e segura. Durante as aulas, o participante aprende a operar o sistema Windows, gerenciar arquivos e utilizar os principais aplicativos do pacote Office, como Word, Excel e PowerPoint, desenvolvendo habilidades essenciais para o estudo, o trabalho e o dia a dia digital." 
 
     }, 
     { 
@@ -21,7 +21,7 @@
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
         "preco": 429, 
-        "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
+        "descricao": "O curso de Introdução à Informática – Windows e Office oferece ao aluno os conhecimentos básicos para utilizar o computador de forma prática e segura. Durante as aulas, o participante aprende a operar o sistema Windows, gerenciar arquivos e utilizar os principais aplicativos do pacote Office, como Word, Excel e PowerPoint, desenvolvendo habilidades essenciais para o estudo, o trabalho e o dia a dia digital." 
     }, 
     { 
         "segmento": "tecnologia", 
@@ -29,7 +29,7 @@
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
         "preco": 429, 
-        "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
+        "descricao": "O curso de Introdução à Informática – Windows e Office oferece ao aluno os conhecimentos básicos para utilizar o computador de forma prática e segura. Durante as aulas, o participante aprende a operar o sistema Windows, gerenciar arquivos e utilizar os principais aplicativos do pacote Office, como Word, Excel e PowerPoint, desenvolvendo habilidades essenciais para o estudo, o trabalho e o dia a dia digital." 
     }, 
     { 
         "segmento": "tecnologia", 
@@ -37,7 +37,7 @@
         "titulo": "Excel Avançado", 
         "ch": 60, 
         "preco": 463, 
-        "descricao": "Utilizar os recursos avançados da planilha eletrônica Excel." 
+        "descricao": "O curso de Excel Avançado capacita o aluno a utilizar recursos avançados da planilha eletrônica para análise e automação de dados. São abordadas funções complexas, criação de dashboards, uso de tabelas dinâmicas, gráficos e macros, aprimorando a produtividade e a tomada de decisões com base em informações precisas e bem estruturadas." 
     },
 
 
@@ -47,7 +47,7 @@
         "titulo": "Relacionamento com o Cliente e o Pós Venda", 
         "ch": 24, 
         "preco": 213, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+        "descricao": "O curso Relacionamento com o Cliente e Pós-Venda capacita o aluno a construir e manter relações duradouras com os clientes, garantindo satisfação e fidelização. São abordadas estratégias de atendimento, comunicação eficaz, resolução de problemas e acompanhamento após a venda, preparando o participante para oferecer um serviço de qualidade que fortaleça a confiança e a reputação da empresa." 
     },
     { 
         "segmento": "Comércio", 
@@ -55,7 +55,7 @@
         "titulo": "Prospecção de Clientes: Identifique seus Clientes Potenciais", 
         "ch": 18, 
         "preco": 167, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+        "descricao": "O curso Prospecção de Clientes: Identifique seus Clientes Potenciais ensina o aluno a identificar e atrair clientes em potencial de forma estratégica. Durante as aulas, são abordadas técnicas de pesquisa de mercado, segmentação, abordagem inicial e relacionamento, capacitando o participante a ampliar oportunidades de negócios e fortalecer a base de clientes de maneira eficaz." 
     },
     { 
         "segmento": "Comércio", 
@@ -63,7 +63,7 @@
         "titulo": "Processos Logísticos de Estoque e Compras", 
         "ch": 24, 
         "preco": 146, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+        "descricao": "O curso de Processos Logísticos de Estoque e Compras capacita o aluno a gerenciar o fluxo de materiais e produtos de forma eficiente, desde a aquisição até o armazenamento. São abordadas práticas de controle de estoque, organização de compras, planejamento e gestão de fornecedores, preparando o participante para otimizar recursos e garantir a eficiência operacional em empresas de diferentes setores." 
     },
 
 
@@ -73,7 +73,7 @@
         "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
         "ch": 20, 
         "preco": 113, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+        "descricao": "O curso de Oratória: Comunicação e Técnicas de Apresentação desenvolve a habilidade do aluno em se expressar de forma clara, segura e persuasiva. Durante as aulas, são trabalhadas técnicas de dicção, postura, linguagem corporal e estruturação de discursos, capacitando o participante a apresentar ideias com confiança em reuniões, palestras, entrevistas e diferentes contextos profissionais." 
     },
     { 
         "segmento": "Comunicação", 
@@ -81,7 +81,7 @@
         "titulo": "Oratória com Técnicas PNL e Coaching", 
         "ch": 24, 
         "preco": 120, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+        "descricao": "O curso de Oratória com Técnicas de PNL e Coaching ensina o aluno a comunicar-se de forma impactante e persuasiva, integrando técnicas de Programação Neurolinguística e princípios de coaching. Durante as aulas, são desenvolvidas habilidades de expressão verbal e não verbal, controle emocional e construção de mensagens eficazes, capacitando o participante a transmitir ideias com confiança e influência em ambientes pessoais e profissionais." 
     }, 
 
 
@@ -91,7 +91,7 @@
         "titulo": "Atendimento Humanizado em Serviços de Saúde", 
         "ch": 24, 
         "preco": 100, 
-        "descricao": "" 
+        "descricao": "O curso de Atendimento Humanizado em Serviços de Saúde prepara o aluno para oferecer cuidado centrado no paciente, valorizando a empatia, o respeito e a comunicação eficaz. Durante as aulas, são abordadas técnicas de relacionamento, escuta ativa e manejo de situações sensíveis, capacitando o profissional a proporcionar um atendimento acolhedor e de qualidade em diferentes contextos de saúde." 
     },
     { 
         "segmento": "saúde", 
@@ -99,7 +99,7 @@
         "titulo": "Biossegurança em Farmácia e Drogarias", 
         "ch": 24, 
         "preco": 99, 
-        "descricao": "" 
+        "descricao": "O curso de Biossegurança em Farmácia e Drogarias capacita o aluno a aplicar práticas seguras no manuseio, armazenamento e descarte de medicamentos e produtos farmacêuticos. O participante aprende normas de higiene, prevenção de riscos biológicos e controle de contaminações, garantindo um ambiente de trabalho seguro para profissionais e clientes, em conformidade com as exigências sanitárias vigentes." 
     },
 
 
@@ -133,7 +133,7 @@
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
         "preco": 99, 
-        "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        "descricao": "O curso Preparando-se para o Mercado de Trabalho capacita o aluno a compreender as exigências e oportunidades do mundo profissional. São abordados temas como elaboração de currículo, entrevistas, postura profissional, networking e desenvolvimento de competências comportamentais, preparando o participante para ingressar e se destacar de forma consciente e estratégica em diferentes áreas de atuação." 
     },
     { 
         "segmento": "gestao", 
@@ -141,7 +141,7 @@
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
         "preco": 99, 
-        "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        "descricao": "O curso Preparando-se para o Mercado de Trabalho capacita o aluno a compreender as exigências e oportunidades do mundo profissional. São abordados temas como elaboração de currículo, entrevistas, postura profissional, networking e desenvolvimento de competências comportamentais, preparando o participante para ingressar e se destacar de forma consciente e estratégica em diferentes áreas de atuação." 
     },
     { 
         "segmento": "gestao", 
@@ -149,7 +149,7 @@
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
         "preco": 99, 
-        "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+        "descricao": "O curso Preparando-se para o Mercado de Trabalho capacita o aluno a compreender as exigências e oportunidades do mundo profissional. São abordados temas como elaboração de currículo, entrevistas, postura profissional, networking e desenvolvimento de competências comportamentais, preparando o participante para ingressar e se destacar de forma consciente e estratégica em diferentes áreas de atuação." 
     },
 
 
@@ -159,7 +159,7 @@
         "titulo": "Barbeiro", 
         "ch": 172, 
         "preco": 930, 
-        "descricao": "O curso de Barbeiro prepara o aluno para atuar com excelência no cuidado e embelezamento masculino, desenvolvendo técnicas de corte, design de barba, acabamento e tratamentos capilares." 
+        "descricao": "O curso de Barbeiro prepara o aluno para atuar com excelência no cuidado e embelezamento masculino, desenvolvendo técnicas de corte, design de barba, acabamento e tratamentos capilares. Durante as aulas, o participante aprende práticas modernas e tradicionais da barbearia, com foco em higiene, atendimento ao cliente e uso correto dos equipamentos. Ao final, estará apto a trabalhar de forma autônoma ou em estabelecimentos do ramo, oferecendo um serviço de qualidade e alinhado às tendências do mercado." 
     },
     { 
         "segmento": "beleza", 
@@ -167,7 +167,7 @@
         "titulo": "Básico de Depilação", 
         "ch": 40, 
         "preco": 245, 
-        "descricao": "O curso Básico de Depilação capacita o aluno a realizar procedimentos de depilação com segurança, higiene e técnica, utilizando métodos tradicionais e modernos." 
+        "descricao": "O curso Básico de Depilação capacita o aluno a realizar procedimentos de depilação com segurança, higiene e técnica, utilizando métodos tradicionais e modernos. Durante as aulas, o participante aprende sobre tipos de pele e pelos, preparo do ambiente e atendimento ao cliente, desenvolvendo habilidades para atuar de forma profissional em salões de beleza, clínicas estéticas ou como autônomo." 
     },
     { 
         "segmento": "beleza", 
@@ -175,7 +175,7 @@
         "titulo": "Make Up Profissional", 
         "ch": 100, 
         "preco": 451, 
-        "descricao": "Este curso desenvolve técnicas de maquiagem adequando às tendências e ao perfil do cliente.É destinado aos profissionais de beleza que desejam se atualizar com as tendências, ampliar seus conhecimentos e aprender a usar as técnicas de maquiagem." 
+        "descricao": "O curso de Make Up Profissional ensina técnicas avançadas de maquiagem para diferentes ocasiões e estilos, incluindo eventos, ensaios fotográficos e produções artísticas. O aluno aprende sobre tipos de pele, produtos, ferramentas, combinações de cores e tendências, desenvolvendo habilidades para atuar de forma criativa, segura e profissional no mercado da beleza." 
     },
     { 
         "segmento": "beleza", 
