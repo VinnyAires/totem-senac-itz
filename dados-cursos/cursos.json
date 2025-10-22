@@ -32,21 +32,100 @@
         "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
     }, 
     { 
-        "segmento": "Comunicação", 
-        "turno": "noturno", 
-        "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
-        "ch": 20, 
-        "preco": 113, 
-        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
-
-    }, 
-    { 
         "segmento": "tecnologia", 
         "turno": "noturno", 
         "titulo": "Excel Avançado", 
         "ch": 60, 
         "preco": 463, 
         "descricao": "Utilizar os recursos avançados da planilha eletrônica Excel." 
+    },
+
+
+    { 
+        "segmento": "Comércio", 
+        "turno": "noturno", 
+        "titulo": "Relacionamento com o Cliente e o Pós Venda", 
+        "ch": 24, 
+        "preco": 213, 
+        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+    },
+    { 
+        "segmento": "Comércio", 
+        "turno": "noturno", 
+        "titulo": "Prospecção de Clientes: Identifique seus Clientes Potenciais", 
+        "ch": 18, 
+        "preco": 167, 
+        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+    },
+    { 
+        "segmento": "Comércio", 
+        "turno": "noturno", 
+        "titulo": "Processos Logísticos de Estoque e Compras", 
+        "ch": 24, 
+        "preco": 146, 
+        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+    },
+
+
+    { 
+        "segmento": "Comunicação", 
+        "turno": "noturno", 
+        "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
+        "ch": 20, 
+        "preco": 113, 
+        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+    },
+    { 
+        "segmento": "Comunicação", 
+        "turno": "noturno", 
+        "titulo": "Oratória com Técnicas PNL e Coaching", 
+        "ch": 24, 
+        "preco": 120, 
+        "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+    }, 
+
+
+    { 
+        "segmento": "saúde", 
+        "turno": "noturno", 
+        "titulo": "Atendimento Humanizado em Serviços de Saúde", 
+        "ch": 24, 
+        "preco": 100, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "saúde", 
+        "turno": "noturno", 
+        "titulo": "Biossegurança em Farmácia e Drogarias", 
+        "ch": 24, 
+        "preco": 99, 
+        "descricao": "" 
+    },
+
+
+    { 
+        "segmento": "gestao", 
+        "turno": "noturno", 
+        "titulo": "Gestão do Tempo", 
+        "ch": 15, 
+        "preco": 85, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "gestao", 
+        "turno": "noturno", 
+        "titulo": "Motivação e Equilíbrio Pessoal e Profissional", 
+        "ch": 15, 
+        "preco": 88, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "gestao", 
+        "turno": "noturno", 
+        "titulo": "Educação Pessoal e Financeira", 
+        "ch": 20, 
+        "preco": 96, 
+        "descricao": "" 
     },
     { 
         "segmento": "gestao", 
@@ -71,8 +150,43 @@
         "ch": 20, 
         "preco": 99, 
         "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+    },
+
+
+    { 
+        "segmento": "beleza", 
+        "turno": "noturno", 
+        "titulo": "Barbeiro", 
+        "ch": 172, 
+        "preco": 930, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "beleza", 
+        "turno": "matutino", 
+        "titulo": "Básico de Depilação", 
+        "ch": 40, 
+        "preco": 245, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "beleza", 
+        "turno": "noturno", 
+        "titulo": "Make Up Profissional", 
+        "ch": 100, 
+        "preco": 451, 
+        "descricao": "" 
+    },
+    { 
+        "segmento": "beleza", 
+        "turno": "matutino", 
+        "titulo": "Depilação com Linha", 
+        "ch": 15, 
+        "preco": 114, 
+        "descricao": "" 
     }
-        
+
+
 
     ] 
 
