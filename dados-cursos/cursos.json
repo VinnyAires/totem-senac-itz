@@ -109,7 +109,7 @@
         "titulo": "Gestão do Tempo", 
         "ch": 15, 
         "preco": 85, 
-        "descricao": "" 
+        "descricao": "O curso de Gestão do Tempo capacita o aluno a organizar suas atividades de forma eficiente, priorizando tarefas e estabelecendo metas realistas. Durante o aprendizado, são abordadas técnicas para aumentar a produtividade, reduzir o estresse e alcançar um melhor equilíbrio entre vida pessoal e profissional, promovendo resultados mais consistentes e conscientes no dia a dia." 
     },
     { 
         "segmento": "gestao", 
@@ -117,7 +117,7 @@
         "titulo": "Motivação e Equilíbrio Pessoal e Profissional", 
         "ch": 15, 
         "preco": 88, 
-        "descricao": "" 
+        "descricao": "O curso de Motivação e Equilíbrio Pessoal e Profissional promove o autoconhecimento e o desenvolvimento de competências emocionais essenciais para lidar com os desafios do dia a dia. O aluno aprende estratégias para manter o foco, a motivação e o bem-estar, equilibrando responsabilidades pessoais e profissionais, o que contribui para uma vida mais produtiva, saudável e satisfatória." 
     },
     { 
         "segmento": "gestao", 
@@ -125,7 +125,7 @@
         "titulo": "Educação Pessoal e Financeira", 
         "ch": 20, 
         "preco": 96, 
-        "descricao": "" 
+        "descricao": "O curso de Educação Pessoal e Financeira tem como objetivo desenvolver a consciência sobre o uso responsável do dinheiro, promovendo hábitos de consumo equilibrados e planejamento financeiro. O aluno aprende a organizar o orçamento, definir metas, lidar com dívidas e investir de forma segura, fortalecendo sua autonomia e capacidade de tomar decisões que contribuam para a estabilidade e o bem-estar financeiro." 
     },
     { 
         "segmento": "gestao", 
@@ -159,7 +159,7 @@
         "titulo": "Barbeiro", 
         "ch": 172, 
         "preco": 930, 
-        "descricao": "" 
+        "descricao": "O curso de Barbeiro prepara o aluno para atuar com excelência no cuidado e embelezamento masculino, desenvolvendo técnicas de corte, design de barba, acabamento e tratamentos capilares." 
     },
     { 
         "segmento": "beleza", 
@@ -167,7 +167,7 @@
         "titulo": "Básico de Depilação", 
         "ch": 40, 
         "preco": 245, 
-        "descricao": "" 
+        "descricao": "O curso Básico de Depilação capacita o aluno a realizar procedimentos de depilação com segurança, higiene e técnica, utilizando métodos tradicionais e modernos." 
     },
     { 
         "segmento": "beleza", 
@@ -175,7 +175,7 @@
         "titulo": "Make Up Profissional", 
         "ch": 100, 
         "preco": 451, 
-        "descricao": "" 
+        "descricao": "Este curso desenvolve técnicas de maquiagem adequando às tendências e ao perfil do cliente.É destinado aos profissionais de beleza que desejam se atualizar com as tendências, ampliar seus conhecimentos e aprender a usar as técnicas de maquiagem." 
     },
     { 
         "segmento": "beleza", 
@@ -183,7 +183,7 @@
         "titulo": "Depilação com Linha", 
         "ch": 15, 
         "preco": 114, 
-        "descricao": "" 
+        "descricao": "O curso de Depilação com Linha ensina técnicas específicas de remoção de pelos faciais e corporais utilizando o método indiano com linha, reconhecido pela precisão e delicadeza. O aluno aprende sobre anatomia da pele, higienização, postura correta e práticas seguras para atender diferentes tipos de clientes, preparando-se para atuar em salões de beleza, clínicas estéticas ou de forma autônoma." 
     }
 
 
