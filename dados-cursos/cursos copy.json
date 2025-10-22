@@ -1,0 +1,705 @@
+{ 
+
+    "turnoLabels": { 
+
+        "matutino": "08h às 12h", 
+
+        "vespertino": "14h às 18h", 
+
+        "noturno": "19h às 22h" 
+
+    }, 
+
+    "cursos": [ 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "matutino", 
+
+            "titulo": "Introdução à Informática – Windows e Office", 
+
+            "ch": 80, 
+
+            "preco": 429, 
+
+            "descricao": "Promover Conhecimentos Básicos de Informática no Windows e Office." 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Introdução à Informática – Windows e Office", 
+
+            "ch": 80, 
+
+            "preco": 429, 
+
+            "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Introdução à Informática – Windows e Office", 
+
+            "ch": 80, 
+
+            "preco": 429, 
+
+            "descricao": " Promover Conhecimentos Básicos de Informática no Windows e Office." 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "matutino", 
+
+            "titulo": "Montagem e Manutenção de Computadores / Notebooks", 
+
+            "ch": 120, 
+
+            "preco": 707, 
+
+            "descricao": " Realizar a montagem, desmontagem e manutenção de computadores e notebooks conforme normas e procedimentos técnicos. " 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "matutino", 
+
+            "titulo": "Programação para Robótica", 
+
+            "ch": 60, 
+
+            "preco": 370, 
+
+            "descricao": "Desenvolva Protótipos e Softwares Embarcados para Aplicações Robóticas." 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Business Intelligence com Power BI", 
+
+            "ch": 40, 
+
+            "preco": 177, 
+
+            "descricao": " Elaborar relatórios dinâmicos/dashboards, de acordo com as premissas de configurações de cada plataforma. " 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Programador de Sistemas", 
+
+            "ch": 200, 
+
+            "preco": 758, 
+
+            "descricao": "Formar profissionais com competências para atuar e intervir em seu campo de trabalho, com foco em resultados. " 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Técnico em Manutenção e Suporte em Informática", 
+
+            "ch": 1000, 
+
+            "preco": 3690, 
+
+            "descricao": " Preparar profissionais para montar e configurar computadores, instalar e manter redes locais e administrar sistemas operacionais de servidores." 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Excel Básico", 
+
+            "ch": 20, 
+
+            "preco": 256, 
+
+            "descricao": "Este curso tem como objetivo propiciar condições básicas para utilização dos recursos da planilha eletrônica Excel. " 
+
+        }, 
+
+        { 
+
+            "segmento": "tecnologia", 
+
+            "turno": "noturno", 
+
+            "titulo": "Excel Avançado", 
+
+            "ch": 60, 
+
+            "preco": 463, 
+
+            "descricao": "Utilizar os recursos avançados da planilha eletrônica Excel." 
+
+        }, 
+
+        { 
+
+            "segmento": "beleza", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Atualização em cortes e escova", 
+
+            "ch": 40, 
+
+            "preco": 372, 
+
+            "descricao": "Aprenda novas técnicas de corte e escova para atualização profissional." 
+
+        }, 
+
+        { 
+
+            "segmento": "beleza", 
+
+            "turno": "noturno", 
+
+            "titulo": "Design e coloração de sobrancelhas", 
+
+            "ch": 40, 
+
+            "preco": 277, 
+
+            "descricao": "Capacita o aluno em técnicas de design e coloração para sobrancelhas." 
+
+        }, 
+
+        { 
+
+            "segmento": "beleza", 
+
+            "turno": "matutino", 
+
+            "titulo": "Extensão de cílios", 
+
+            "ch": 20, 
+
+            "preco": 380, 
+
+            "descricao": "Ensina técnicas de alongamento e extensão de cílios." 
+
+        }, 
+
+        { 
+
+            "segmento": "beleza", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Básico de manicure e pedicure", 
+
+            "ch": 60, 
+
+            "preco": 461, 
+
+            "descricao": "Capacita o aluno nas práticas essenciais de manicure e pedicure." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "matutino", 
+
+            "titulo": "Praticas de Vendas e Representação no Atacado", 
+
+            "ch": 30, 
+
+            "preco": 229, 
+
+            "descricao": "Este curso tem como objetivo dar subsídios ao aluno para o desenvolvimento de rotinas de planejamento e realização de vendas no atacado, considerando as especificidades dos clientes e fornecedores." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "matutino", 
+
+            "titulo": "Preparando-se para o Mercado de Trabalho", 
+
+            "ch": 20, 
+
+            "preco": 99, 
+
+            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Preparando-se para o Mercado de Trabalho", 
+
+            "ch": 20, 
+
+            "preco": 99, 
+
+            "descricao": "Este curso tem como objetivo orientar os participantes sobre a postura profissional para a busca do primeiro emprego proporcionando habilidades necessárias para inserção no mundo de trabalho." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "vespertino", 
+
+            "titulo": "E-Commerce: Vendendo no Comércio Eletrônico", 
+
+            "ch": 42, 
+
+            "preco": 238, 
+
+            "descricao": "Tem como objetivo desenvolver a competência: · Estruturar estratégias de vendas no comércio eletrônico." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Marketing Pessoal para Vendedores: Você é o seu Melhor Produto", 
+
+            "ch": 15, 
+
+            "preco": 158, 
+
+            "descricao": "Este curso tem como objetivo apresentar ao vendedor técnicas de marketing pessoal que lhe permitam melhorar sua imagem pessoal e profissional, para atrair e manter clientes, estabelecendo um diferencial de mercado." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Rotinas Pessoal", 
+
+            "ch": 72, 
+
+            "preco": 367, 
+
+            "descricao": "Este curso tem como objetivo desenvolver a seguinte competência: Apoiar e executar ações referentes às rotinas de pessoal." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Estrategias de Negociação", 
+
+            "ch": 15, 
+
+            "preco": 151, 
+
+            "descricao": "Aprenda técnicas de negociação aplicáveis ao ambiente empresarial e comercial." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Empreendedorismo Digital", 
+
+            "ch": 60, 
+
+            "preco": 291, 
+
+            "descricao": "Este curso tem como objetivo desenvolver a seguinte competência: implantar negócio digital." 
+
+        }, 
+
+        { 
+
+            "segmento": "gestao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Práticas Administrativas", 
+
+            "ch": 30, 
+
+            "preco": 150, 
+
+            "descricao": "Este curso tem como objetivo auxiliá-lo na aquisição de conhecimentos e habilidades para aplicação nas rotinas adiminstrativas." 
+
+        }, 
+
+        { 
+
+            "segmento": "moda", 
+
+            "turno": "noturno", 
+
+            "titulo": "Design de Moda Sustentável", 
+
+            "ch": 120, 
+
+            "preco": 720, 
+
+            "descricao": "Técnicas para criar moda com baixo impacto ambiental." 
+
+        }, 
+
+        { 
+
+            "segmento": "saude", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Auxiliar de Enfermagem", 
+
+            "ch": 200, 
+
+            "preco": 780.1, 
+
+            "descricao": "Competências práticas de apoio aos profissionais de enfermagem." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Administração financeira no comércio", 
+
+            "ch": 30, 
+
+            "preco": 229, 
+
+            "descricao": "Apresenta conceitos básicos de gestão e organização financeira voltados para o comércio." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Como vender na internet e redes sociais", 
+
+            "ch": 16, 
+
+            "preco": 72, 
+
+            "descricao": "Apresenta estratégias de vendas online e uso de redes sociais para negócios." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Empreendedorismo digital", 
+
+            "ch": 60, 
+
+            "preco": 298, 
+
+            "descricao": "Capacita o participante a planejar e gerir negócios digitais." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Estratégias de negociação para o vendedor", 
+
+            "ch": 15, 
+
+            "preco": 151, 
+
+            "descricao": "Ensina técnicas práticas de negociação aplicadas à rotina de vendas." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Ferramenta de marketing digital", 
+
+            "ch": 24, 
+
+            "preco": 188, 
+
+            "descricao": "Capacita no uso de ferramentas digitais para divulgação e fortalecimento de marcas." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Planejamento de marketing para gestores", 
+
+            "ch": 18, 
+
+            "preco": 166, 
+
+            "descricao": "Apresenta fundamentos do planejamento estratégico de marketing para gestores." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Planejamento financeiro para o comércio", 
+
+            "ch": 24, 
+
+            "preco": 205, 
+
+            "descricao": "Capacita o aluno a organizar e planejar as finanças de um negócio comercial." 
+
+        }, 
+
+        { 
+
+            "segmento": "comercio", 
+
+            "turno": "noturno", 
+
+            "titulo": "Técnica avançada de vendas e atendimento", 
+
+            "ch": 16, 
+
+            "preco": 71, 
+
+            "descricao": "Este curso tem como objetivo apresentar aos alunos as estratégias e ferramentas utilizadas na comercialização de produtos e/ou serviços com alto valor agregado, sendo uma das exigências o empenho ativo, o conhecimento tecnológico e novas tendências do mercado." 
+
+        }, 
+
+        { 
+
+            "segmento": "comunicacao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Dicção, Desinibição e Oratória", 
+
+            "ch": 30, 
+
+            "preco": 222, 
+
+            "descricao": "Este curso tem o objetivo de proporcionar ao participante o desenvolvimento da habilidade de falar em público com o desenvolvimento de técnicas de postura, expressão e comunicação oral, a fim de possibilitar uma comunicação eficaz." 
+
+        }, 
+
+        { 
+
+            "segmento": "comunicacao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
+
+            "ch": 20, 
+
+            "preco": 113, 
+
+            "descricao": "É destinado a profissionais de todas as áreas que desejam desenvolver o domínio das técnicas de apresentação e habilidades para falar em público." 
+
+        }, 
+
+        { 
+
+            "segmento": "educacional", 
+
+            "turno": "matutino", 
+
+            "titulo": "Redação para ENEM", 
+
+            "ch": 20, 
+
+            "preco": 87, 
+
+            "descricao": "Descrição Indisponível. " 
+
+        }, 
+
+        { 
+
+            "segmento": "gastronomia", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Preparo de Salgados", 
+
+            "ch": 40, 
+
+            "preco": 579, 
+
+            "descricao": "Este curso tem como objetivo promover a construção de conhecimentos relativos ao preparo de salgados." 
+
+        }, 
+
+        { 
+
+            "segmento": "educacao", 
+
+            "turno": "matutino", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        }, 
+
+        { 
+
+            "segmento": "educacao", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        }, 
+
+        { 
+
+            "segmento": "educacao", 
+
+            "turno": "noturno", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        }, 
+
+        { 
+
+            "segmento": "artes", 
+
+            "turno": "matutino", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        }, 
+
+        { 
+
+            "segmento": "artes", 
+
+            "turno": "vespertino", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        }, 
+
+        { 
+
+            "segmento": "artes", 
+
+            "turno": "noturno", 
+
+            "titulo": "Curso Teste de Card", 
+
+            "ch": 40, 
+
+            "preco": 100, 
+
+            "descricao": "Este curso tem como objetivo testar a construção e popular os cards de visualização." 
+
+        } 
+
+    ] 
+
+} 
