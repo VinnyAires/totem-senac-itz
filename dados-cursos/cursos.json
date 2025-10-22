@@ -42,7 +42,7 @@
 
 
     { 
-        "segmento": "Comércio", 
+        "segmento": "Comercio", 
         "turno": "noturno", 
         "titulo": "Relacionamento com o Cliente e o Pós Venda", 
         "ch": 24, 
@@ -50,7 +50,7 @@
         "descricao": "O curso Relacionamento com o Cliente e Pós-Venda capacita o aluno a construir e manter relações duradouras com os clientes, garantindo satisfação e fidelização. São abordadas estratégias de atendimento, comunicação eficaz, resolução de problemas e acompanhamento após a venda, preparando o participante para oferecer um serviço de qualidade que fortaleça a confiança e a reputação da empresa." 
     },
     { 
-        "segmento": "Comércio", 
+        "segmento": "Comercio", 
         "turno": "noturno", 
         "titulo": "Prospecção de Clientes: Identifique seus Clientes Potenciais", 
         "ch": 18, 
@@ -58,7 +58,7 @@
         "descricao": "O curso Prospecção de Clientes: Identifique seus Clientes Potenciais ensina o aluno a identificar e atrair clientes em potencial de forma estratégica. Durante as aulas, são abordadas técnicas de pesquisa de mercado, segmentação, abordagem inicial e relacionamento, capacitando o participante a ampliar oportunidades de negócios e fortalecer a base de clientes de maneira eficaz." 
     },
     { 
-        "segmento": "Comércio", 
+        "segmento": "Comercio", 
         "turno": "noturno", 
         "titulo": "Processos Logísticos de Estoque e Compras", 
         "ch": 24, 
@@ -68,7 +68,7 @@
 
 
     { 
-        "segmento": "Comunicação", 
+        "segmento": "Comunicacao", 
         "turno": "noturno", 
         "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
         "ch": 20, 
@@ -76,7 +76,7 @@
         "descricao": "O curso de Oratória: Comunicação e Técnicas de Apresentação desenvolve a habilidade do aluno em se expressar de forma clara, segura e persuasiva. Durante as aulas, são trabalhadas técnicas de dicção, postura, linguagem corporal e estruturação de discursos, capacitando o participante a apresentar ideias com confiança em reuniões, palestras, entrevistas e diferentes contextos profissionais." 
     },
     { 
-        "segmento": "Comunicação", 
+        "segmento": "Comunicacao", 
         "turno": "noturno", 
         "titulo": "Oratória com Técnicas PNL e Coaching", 
         "ch": 24, 
@@ -86,7 +86,7 @@
 
 
     { 
-        "segmento": "saúde", 
+        "segmento": "saude", 
         "turno": "noturno", 
         "titulo": "Atendimento Humanizado em Serviços de Saúde", 
         "ch": 24, 
@@ -94,7 +94,7 @@
         "descricao": "O curso de Atendimento Humanizado em Serviços de Saúde prepara o aluno para oferecer cuidado centrado no paciente, valorizando a empatia, o respeito e a comunicação eficaz. Durante as aulas, são abordadas técnicas de relacionamento, escuta ativa e manejo de situações sensíveis, capacitando o profissional a proporcionar um atendimento acolhedor e de qualidade em diferentes contextos de saúde." 
     },
     { 
-        "segmento": "saúde", 
+        "segmento": "saude", 
         "turno": "noturno", 
         "titulo": "Biossegurança em Farmácia e Drogarias", 
         "ch": 24, 
