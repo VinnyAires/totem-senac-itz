@@ -301,6 +301,7 @@ button:hover {
 .modal__content {
   background: #2447a7;
   color: #fff;
+  text-align: center;
   padding: var(--gap);
   border-radius: var(--radius);
   width: 90%;
