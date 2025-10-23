@@ -7,7 +7,7 @@
 
     "cursos": [ 
     { 
-        "segmento": "tecnologia", 
+        "segmento": "Tecnologia", 
         "turno": "matutino", 
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
@@ -16,7 +16,7 @@
 
     }, 
     { 
-        "segmento": "tecnologia", 
+        "segmento": "Tecnologia", 
         "turno": "vespertino", 
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
@@ -24,7 +24,7 @@
         "descricao": "O curso de Introdução à Informática – Windows e Office oferece ao aluno os conhecimentos básicos para utilizar o computador de forma prática e segura. Durante as aulas, o participante aprende a operar o sistema Windows, gerenciar arquivos e utilizar os principais aplicativos do pacote Office, como Word, Excel e PowerPoint, desenvolvendo habilidades essenciais para o estudo, o trabalho e o dia a dia digital." 
     }, 
     { 
-        "segmento": "tecnologia", 
+        "segmento": "Tecnologia", 
         "turno": "noturno", 
         "titulo": "Introdução à Informática – Windows e Office", 
         "ch": 80, 
@@ -32,7 +32,7 @@
         "descricao": "O curso de Introdução à Informática – Windows e Office oferece ao aluno os conhecimentos básicos para utilizar o computador de forma prática e segura. Durante as aulas, o participante aprende a operar o sistema Windows, gerenciar arquivos e utilizar os principais aplicativos do pacote Office, como Word, Excel e PowerPoint, desenvolvendo habilidades essenciais para o estudo, o trabalho e o dia a dia digital." 
     }, 
     { 
-        "segmento": "tecnologia", 
+        "segmento": "Tecnologia", 
         "turno": "noturno", 
         "titulo": "Excel Avançado", 
         "ch": 60, 
@@ -42,7 +42,7 @@
 
 
     { 
-        "segmento": "Comercio", 
+        "segmento": "Comércio", 
         "turno": "noturno", 
         "titulo": "Relacionamento com o Cliente e o Pós Venda", 
         "ch": 24, 
@@ -50,7 +50,7 @@
         "descricao": "O curso Relacionamento com o Cliente e Pós-Venda capacita o aluno a construir e manter relações duradouras com os clientes, garantindo satisfação e fidelização. São abordadas estratégias de atendimento, comunicação eficaz, resolução de problemas e acompanhamento após a venda, preparando o participante para oferecer um serviço de qualidade que fortaleça a confiança e a reputação da empresa." 
     },
     { 
-        "segmento": "Comercio", 
+        "segmento": "Comércio", 
         "turno": "noturno", 
         "titulo": "Prospecção de Clientes: Identifique seus Clientes Potenciais", 
         "ch": 18, 
@@ -58,7 +58,7 @@
         "descricao": "O curso Prospecção de Clientes: Identifique seus Clientes Potenciais ensina o aluno a identificar e atrair clientes em potencial de forma estratégica. Durante as aulas, são abordadas técnicas de pesquisa de mercado, segmentação, abordagem inicial e relacionamento, capacitando o participante a ampliar oportunidades de negócios e fortalecer a base de clientes de maneira eficaz." 
     },
     { 
-        "segmento": "Comercio", 
+        "segmento": "Comércio", 
         "turno": "noturno", 
         "titulo": "Processos Logísticos de Estoque e Compras", 
         "ch": 24, 
@@ -68,7 +68,7 @@
 
 
     { 
-        "segmento": "Comunicacao", 
+        "segmento": "Comunicação", 
         "turno": "noturno", 
         "titulo": "Oratória: Comunicação e Técnicas de Apresentação", 
         "ch": 20, 
@@ -76,7 +76,7 @@
         "descricao": "O curso de Oratória: Comunicação e Técnicas de Apresentação desenvolve a habilidade do aluno em se expressar de forma clara, segura e persuasiva. Durante as aulas, são trabalhadas técnicas de dicção, postura, linguagem corporal e estruturação de discursos, capacitando o participante a apresentar ideias com confiança em reuniões, palestras, entrevistas e diferentes contextos profissionais." 
     },
     { 
-        "segmento": "Comunicacao", 
+        "segmento": "Comunicação", 
         "turno": "noturno", 
         "titulo": "Oratória com Técnicas PNL e Coaching", 
         "ch": 24, 
@@ -86,7 +86,7 @@
 
 
     { 
-        "segmento": "saude", 
+        "segmento": "Saúde", 
         "turno": "noturno", 
         "titulo": "Atendimento Humanizado em Serviços de Saúde", 
         "ch": 24, 
@@ -94,7 +94,7 @@
         "descricao": "O curso de Atendimento Humanizado em Serviços de Saúde prepara o aluno para oferecer cuidado centrado no paciente, valorizando a empatia, o respeito e a comunicação eficaz. Durante as aulas, são abordadas técnicas de relacionamento, escuta ativa e manejo de situações sensíveis, capacitando o profissional a proporcionar um atendimento acolhedor e de qualidade em diferentes contextos de saúde." 
     },
     { 
-        "segmento": "saude", 
+        "segmento": "Saúde", 
         "turno": "noturno", 
         "titulo": "Biossegurança em Farmácia e Drogarias", 
         "ch": 24, 
@@ -104,7 +104,7 @@
 
 
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "noturno", 
         "titulo": "Gestão do Tempo", 
         "ch": 15, 
@@ -112,7 +112,7 @@
         "descricao": "O curso de Gestão do Tempo capacita o aluno a organizar suas atividades de forma eficiente, priorizando tarefas e estabelecendo metas realistas. Durante o aprendizado, são abordadas técnicas para aumentar a produtividade, reduzir o estresse e alcançar um melhor equilíbrio entre vida pessoal e profissional, promovendo resultados mais consistentes e conscientes no dia a dia." 
     },
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "noturno", 
         "titulo": "Motivação e Equilíbrio Pessoal e Profissional", 
         "ch": 15, 
@@ -120,7 +120,7 @@
         "descricao": "O curso de Motivação e Equilíbrio Pessoal e Profissional promove o autoconhecimento e o desenvolvimento de competências emocionais essenciais para lidar com os desafios do dia a dia. O aluno aprende estratégias para manter o foco, a motivação e o bem-estar, equilibrando responsabilidades pessoais e profissionais, o que contribui para uma vida mais produtiva, saudável e satisfatória." 
     },
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "noturno", 
         "titulo": "Educação Pessoal e Financeira", 
         "ch": 20, 
@@ -128,7 +128,7 @@
         "descricao": "O curso de Educação Pessoal e Financeira tem como objetivo desenvolver a consciência sobre o uso responsável do dinheiro, promovendo hábitos de consumo equilibrados e planejamento financeiro. O aluno aprende a organizar o orçamento, definir metas, lidar com dívidas e investir de forma segura, fortalecendo sua autonomia e capacidade de tomar decisões que contribuam para a estabilidade e o bem-estar financeiro." 
     },
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "matutino", 
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
@@ -136,7 +136,7 @@
         "descricao": "O curso Preparando-se para o Mercado de Trabalho capacita o aluno a compreender as exigências e oportunidades do mundo profissional. São abordados temas como elaboração de currículo, entrevistas, postura profissional, networking e desenvolvimento de competências comportamentais, preparando o participante para ingressar e se destacar de forma consciente e estratégica em diferentes áreas de atuação." 
     },
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "vespertino", 
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
@@ -144,7 +144,7 @@
         "descricao": "O curso Preparando-se para o Mercado de Trabalho capacita o aluno a compreender as exigências e oportunidades do mundo profissional. São abordados temas como elaboração de currículo, entrevistas, postura profissional, networking e desenvolvimento de competências comportamentais, preparando o participante para ingressar e se destacar de forma consciente e estratégica em diferentes áreas de atuação." 
     },
     { 
-        "segmento": "gestao", 
+        "segmento": "Gestão", 
         "turno": "noturno", 
         "titulo": "Preparando-se para o Mercado de Trabalho", 
         "ch": 20, 
@@ -154,7 +154,7 @@
 
 
     { 
-        "segmento": "beleza", 
+        "segmento": "Beleza", 
         "turno": "noturno", 
         "titulo": "Barbeiro", 
         "ch": 172, 
@@ -162,7 +162,7 @@
         "descricao": "O curso de Barbeiro prepara o aluno para atuar com excelência no cuidado e embelezamento masculino, desenvolvendo técnicas de corte, design de barba, acabamento e tratamentos capilares. Durante as aulas, o participante aprende práticas modernas e tradicionais da barbearia, com foco em higiene, atendimento ao cliente e uso correto dos equipamentos. Ao final, estará apto a trabalhar de forma autônoma ou em estabelecimentos do ramo, oferecendo um serviço de qualidade e alinhado às tendências do mercado." 
     },
     { 
-        "segmento": "beleza", 
+        "segmento": "Beleza", 
         "turno": "matutino", 
         "titulo": "Básico de Depilação", 
         "ch": 40, 
@@ -170,7 +170,7 @@
         "descricao": "O curso Básico de Depilação capacita o aluno a realizar procedimentos de depilação com segurança, higiene e técnica, utilizando métodos tradicionais e modernos. Durante as aulas, o participante aprende sobre tipos de pele e pelos, preparo do ambiente e atendimento ao cliente, desenvolvendo habilidades para atuar de forma profissional em salões de beleza, clínicas estéticas ou como autônomo." 
     },
     { 
-        "segmento": "beleza", 
+        "segmento": "Beleza", 
         "turno": "noturno", 
         "titulo": "Make Up Profissional", 
         "ch": 100, 
@@ -178,7 +178,7 @@
         "descricao": "O curso de Make Up Profissional ensina técnicas avançadas de maquiagem para diferentes ocasiões e estilos, incluindo eventos, ensaios fotográficos e produções artísticas. O aluno aprende sobre tipos de pele, produtos, ferramentas, combinações de cores e tendências, desenvolvendo habilidades para atuar de forma criativa, segura e profissional no mercado da beleza." 
     },
     { 
-        "segmento": "beleza", 
+        "segmento": "Beleza", 
         "turno": "matutino", 
         "titulo": "Depilação com Linha", 
         "ch": 15, 

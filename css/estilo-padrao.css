@@ -90,7 +90,7 @@ header{
   margin-top: 0;
 }
 .topo-text p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-subtext);
   line-height: 1.4;
   padding: var(--gap);
